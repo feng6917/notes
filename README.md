@@ -36,6 +36,7 @@
   * [使用反射做了一个导出Excel的包](https://github.com/feng6917/blog/blob/main/golang/reflect-excel.md)
   * [aes加密解密 文件](https://github.com/feng6917/blog/blob/main/golang/fileAes/server/main.go)
   * [go build 构建](https://github.com/feng6917/blog/blob/main/golang/fileAes/Readme.md)
+  * [go test](https://github.com/feng6917/blog/blob/main/golang/test)
 
 * other
   * [一个程序员的成长之路 mark一下](https://github.com/fouber/blog/issues/41)
