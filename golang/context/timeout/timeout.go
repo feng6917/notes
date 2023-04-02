@@ -37,13 +37,13 @@ func deal2(ctx context.Context, cancel context.CancelFunc) {
 	}
 }
 
-func TimeoutA() {
+func timeoutA() {
 	ctx, cancel := newContextWithTimeOut()
 	defer cancel()
 	deal(ctx)
 }
 
-func TimeoutA1() {
+func timeoutA1() {
 	ctx, cancel := newContextWithTimeOut()
 	defer cancel()
 	deal2(ctx, cancel)

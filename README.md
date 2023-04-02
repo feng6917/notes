@@ -26,7 +26,7 @@
   * [goroutine](https://github.com/feng6917/blog/tree/main/golang/goroutine/main.go)
   * [select](https://github.com/feng6917/blog/tree/main/golang/select/main.go)
   * [排序](https://github.com/feng6917/blog/tree/main/golang/sort/main.go)
-  * [instance](https://github.com/feng6917/blog/tree/main/golang/instance)
+  * [函数式方法](https://github.com/feng6917/blog/tree/main/golang/instance)
   * [broadcast 广播消息](https://github.com/feng6917/blog/tree/main/golang/broadcast/main.go)
   * [workerpool 协程池](https://github.com/gammazero/workerpool)
   * [bigcache 缓存处理](https://github.com/feng6917/blog/tree/main/golang/bigcache)

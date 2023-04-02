@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-func CancelA() {
+func cancelA() {
 	ctx, cancel := context.WithCancel(context.Background())
 	go func(ctx context.Context) {
 		for {
@@ -26,7 +26,7 @@ func CancelA() {
 	time.Sleep(1 * time.Second)
 }
 
-func CancelA1() {
+func cancelA1() {
 	var ctx, nctx context.Context
 	var cancel context.CancelFunc
 	ctx, cancel = context.WithCancel(context.Background())
@@ -65,7 +65,7 @@ func CancelA1() {
 	//time.Sleep(1 * time.Second)
 }
 
-func CancelA2() {
+func cancelA2() {
 	var ctx, nctx context.Context
 	var cancel, ncancel context.CancelFunc
 	ctx, cancel = context.WithCancel(context.Background())
@@ -103,7 +103,7 @@ func CancelA2() {
 	time.Sleep(1 * time.Second)
 }
 
-func CancelA3() {
+func cancelA3() {
 	var ctx, nctx context.Context
 	var ncancel context.CancelFunc
 	ctx, _ = context.WithCancel(context.Background())
@@ -141,7 +141,7 @@ func CancelA3() {
 	time.Sleep(1 * time.Second)
 }
 
-func CancelA4() {
+func cancelA4() {
 	var ctx, nctx context.Context
 	var cancel context.CancelFunc
 	ctx, cancel = context.WithCancel(context.Background())

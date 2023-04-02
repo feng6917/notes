@@ -5,8 +5,6 @@ import (
 	"time"
 )
 
-
-
 func BreakA(ch chan int) {
 	for {
 		select {
@@ -22,7 +20,7 @@ func BreakA(ch chan int) {
 	fmt.Println("exit!")
 }
 
-// for select 无法直接使用break 关闭, 可以使用 break+label 关闭
+// BreakA1 for select 无法直接使用break 关闭, 可以使用 break+label 关闭
 func BreakA1(ch chan int) {
 Exit:
 	for {
@@ -39,7 +37,7 @@ Exit:
 	fmt.Println("exit!")
 }
 
-// for select 可以使用chan关闭
+// BreakA2 for select 可以使用chan关闭
 func BreakA2(ch chan int) {
 	chStatus := make(chan bool)
 	go func() {
