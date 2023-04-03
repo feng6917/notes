@@ -121,6 +121,13 @@ git config --global http.proxy socks5://127.0.0.1:1080
 git config --global https.proxy socks5://127.0.0.1:1080
 
 
+# 创建 submodule
+git submodule add <submodule_url>
+
+# 获取 submodule
+一种方式是在克隆主项目的时候带上参数 --recurse-submodules
+
+一种可行的方式是，在当前主项目中执行：
 git submodule init & git submodule update
 
 ```
