@@ -1,4 +1,8 @@
-# 个人博客
+# Notes
+
+```
+ 无知者无畏
+```
 
 ![img.png](https://github.com/feng6917/blog/blob/main/asserts/stay.01.jpg)
 
