@@ -82,7 +82,7 @@ func checkTimes(s string) (time.Duration, bool) {
 
 func runImage(p string) {
 	myApp := app.New()
-	w := myApp.NewWindow("Go GO GO!")
+	w := myApp.NewWindow("Go Go Go!")
 	var image *canvas.Image
 	if p != "" {
 		image = canvas.NewImageFromFile(p)
