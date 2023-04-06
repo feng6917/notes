@@ -21,6 +21,7 @@ const (
 var (
 	imageFilePath string
 	times         string
+	head          string
 	defaultValue  bool
 )
 
@@ -28,6 +29,7 @@ var (
 func init() {
 	flag.BoolVar(&defaultValue, "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-", false, tip)
 	flag.StringVar(&imageFilePath, "p", "", "name: 图片文件路径. \r\nvalue: 非必传. ")
+	flag.StringVar(&head, "h", "GOGOGO", "name: 标题. \r\nvalue: 非必传 默认GOGOGO. ")
 	flag.StringVar(&times, "t", "", "name: 提醒时间. \r\nvalue: (s/m/h)非必传. ")
 }
 
@@ -47,7 +49,7 @@ func main() {
 		}
 	}
 	time.Sleep(d)
-	runImage(imageFilePath)
+	runImage(imageFilePath, head)
 }
 
 func checkTimes(s string) (time.Duration, bool) {
@@ -80,9 +82,9 @@ func checkTimes(s string) (time.Duration, bool) {
 	return d, ok
 }
 
-func runImage(p string) {
+func runImage(p, head string) {
 	myApp := app.New()
-	w := myApp.NewWindow("Go Go Go!")
+	w := myApp.NewWindow(head)
 	var image *canvas.Image
 	if p != "" {
 		image = canvas.NewImageFromFile(p)
