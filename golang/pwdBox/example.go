@@ -85,7 +85,7 @@ ROOTLABEL:
 
 	var urlAddress, loginName, pwd string
 	fmt.Println("请输入网址:")
-	fmt.Scanf("%s", &urlAddress)
+	fmt.Scan(&urlAddress)
 	urlAddress = strings.TrimSpace(urlAddress)
 	if urlAddress == "q" || urlAddress == "Q" {
 		return
@@ -101,7 +101,7 @@ ROOTLABEL:
 
 LOGINNAMETLABEL:
 	fmt.Println("请输入登录名: ")
-	fmt.Scanf("%s", &loginName)
+	fmt.Scan(&loginName)
 	loginName = strings.TrimSpace(loginName)
 	if loginName == "q" || loginName == "Q" {
 		return
@@ -118,7 +118,7 @@ LOGINNAMETLABEL:
 	if urlAddress == "0" && loginName == "0" {
 		var resetPwd string
 		fmt.Println("密码箱即将重置,请输入指令 '1' 确认:")
-		fmt.Scanf("%s", &resetPwd)
+		fmt.Scan(&resetPwd)
 		if resetPwd == "q" || resetPwd == "Q" {
 			return
 		}
@@ -164,7 +164,7 @@ LOGINNAMETLABEL:
 
 PASSWORDLABEL:
 	fmt.Println("请输入密码: ")
-	fmt.Scanf("%s", &pwd)
+	fmt.Scan(&pwd)
 	pwd = strings.TrimSpace(pwd)
 	if pwd == "q" || pwd == "Q" {
 		return

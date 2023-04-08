@@ -3,9 +3,9 @@ package main
 import (
 	"flag"
 	"fmt"
-	"golang/fileAes/util"
-	"golang/fileAes/util/file"
-	"golang/fileAes/util/hex"
+	"golang/util"
+	"golang/util/file"
+	"golang/util/hex"
 	"os"
 	"strings"
 )
@@ -33,7 +33,7 @@ func init() {
 	flag.StringVar(&newFilePath, "n", "", "name: 新的文件路径. \r\nvalue: 非必传,默认为空.")
 }
 
-func app() {
+func main() {
 	flag.Parse()
 	var err error
 	if strings.TrimSpace(sourceFilePath) == "" {
