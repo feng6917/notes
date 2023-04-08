@@ -8,6 +8,7 @@ require (
 	github.com/allegro/bigcache v1.2.1
 	github.com/dustin/go-broadcast v0.0.0-20211018055107-71439988bd91
 	github.com/gorilla/i18n v0.0.0-20150820051429-8b358169da46
+	github.com/mattn/go-sqlite3 v1.14.16
 	github.com/secsy/goftp v0.0.0-20200609142545-aa2de14babf4
 	github.com/stretchr/testify v1.8.2
 	github.com/trimmer-io/go-xmp v1.0.0
@@ -21,6 +22,8 @@ require (
 	golang.org/x/net v0.5.0
 	golang.org/x/text v0.6.0
 	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1
+	gorm.io/driver/sqlite v1.4.4
+	gorm.io/gorm v1.24.0
 )
 
 require (
@@ -40,6 +43,8 @@ require (
 	github.com/godbus/dbus/v5 v5.1.0 // indirect
 	github.com/goki/freetype v0.0.0-20220119013949-7a161fd3728c // indirect
 	github.com/gopherjs/gopherjs v1.17.2 // indirect
+	github.com/jinzhu/inflection v1.0.0 // indirect
+	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/jsummers/gobmp v0.0.0-20151104160322-e2ba15ffa76e // indirect
 	github.com/mohae/deepcopy v0.0.0-20170929034955-c48cc78d4826 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
