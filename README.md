@@ -22,7 +22,7 @@
   * [vsftpd-install](https://github.com/feng6917/blog/blob/main/app-install/vsftpd-install.md)  
 
 * golang
-  * [数组和slice](https://github.com/feng6917/blog/tree/main/golang/array__liceo)
+  * [数组、字符串和切片](https://github.com/feng6917/blog/tree/main/golang/arraySliceString)
   * [channel](https://github.com/feng6917/blog/tree/main/golang/channel)
   * [循环引用](https://github.com/feng6917/blog/tree/main/golang/circularReference/readme.md)
   * [context](https://github.com/feng6917/blog/tree/main/golang/context/readme.md)
