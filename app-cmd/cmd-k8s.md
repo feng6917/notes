@@ -13,6 +13,12 @@
    kubectl describe pod pod-name
    # 查看 log
    kubectl logs pod-name --tail 20
+   # 查看所有容器 日志
+   kubectl logs <podname> --all-containers
+   # 查看Pod里业务容器的命令
+   kubectl get pods myapp-pod -o jsonpath={.spec.containers[*].name}
+   # 查看pod里某个容器日志
+   kubectl logs <podname> -c container-name
    # 进入 Pod 容器终端， -c container-name 可以指定进入哪个容器。
    kubectl exec -it pod-name -- bash
    # 伸缩扩展副本
