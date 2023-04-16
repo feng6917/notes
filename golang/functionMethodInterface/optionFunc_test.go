@@ -1,4 +1,4 @@
-package optionFunc
+package main
 
 import (
 	"testing"

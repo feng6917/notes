@@ -10,9 +10,9 @@
 目录
 
 * app-cmd
-  * [k8s-cmd](https://github.com/feng6917/blog/blob/main/app-cmd/k8s-cmd.md)
   * [docker-cmd](https://github.com/feng6917/blog/blob/main/app-cmd/docker-cmd.md)
   * [git-cmd](https://github.com/feng6917/blog/blob/main/app-cmd/git-cmd.md)
+  * [k8s-cmd](https://github.com/feng6917/blog/blob/main/app-cmd/k8s-cmd.md)
   * [linux-cmd](https://github.com/feng6917/blog/blob/main/app-cmd/linux-cmd.md)
 
 * app-install
@@ -23,7 +23,7 @@
 
 * golang
   * [数组、字符串和切片](https://github.com/feng6917/blog/tree/main/golang/arraySliceString)
-  * [channel](https://github.com/feng6917/blog/tree/main/golang/channel)
+  * [函数、方法和接口](https://github.com/feng6917/blog/tree/main/golang/functionMethodInterface)
   * [循环引用](https://github.com/feng6917/blog/tree/main/golang/circularReference/readme.md)
   * [context](https://github.com/feng6917/blog/tree/main/golang/context/readme.md)
   * [ftp 待修改](https://github.com/feng6917/blog/tree/main/golang/ftp/example.go)
