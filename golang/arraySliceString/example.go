@@ -4,6 +4,9 @@ import (
 	"fmt"
 	"os"
 	"regexp"
+	"sort"
+	"strconv"
+	"strings"
 )
 
 // ps: 照搬 Go语言高级教程 仅用于笔记记录
@@ -112,6 +115,13 @@ func main() {
 	ae = ae[:len(ae)-1]
 	fmt.Println(ae)
 
+	// 数组比较
+	Uint64SliceEqualBCE([]uint64{1}, []uint64{2})
+	// 数组去重并排序
+	RemoveDuplicationMap([]uint64{1, 1})
+	// 数组转字符串
+	uint2string([]uint64{1}, "-")
+
 }
 
 func Filter(s []byte, fn func(x byte) bool) []byte {
@@ -151,4 +161,57 @@ func (c *Repo) Slice(nums []int) {
 // ArrayPointer 数组传参 指针传递 函数内修改有效
 func (c *Repo) ArrayPointer(nums *[1]int) {
 	nums[0] = c.Value
+}
+
+// 数组比较
+func Uint64SliceEqualBCE(a, b []uint64) bool {
+	if len(a) != len(b) {
+		return false
+	}
+
+	if (a == nil) != (b == nil) {
+		return false
+	}
+
+	b = b[:len(a)]
+	for i, v := range a {
+		if v != b[i] {
+			return false
+		}
+	}
+	return true
+}
+
+// 数组去重并排序
+func RemoveDuplicationMap(arr []uint64) []uint64 {
+	set := make(map[uint64]struct{}, len(arr))
+	j := 0
+	for _, v := range arr {
+		_, ok := set[v]
+		if ok {
+			continue
+		}
+		set[v] = struct{}{}
+		arr[j] = v
+		j++
+	}
+	arr = arr[:j]
+	sort.Slice(arr, func(i, j int) bool {
+		return arr[i] < arr[j]
+	})
+	return arr
+}
+
+// 数组转字符串
+func uint2string(elems []uint64, joinStr string) string {
+	var res []string
+	switch len(elems) {
+	case 0:
+		return ""
+	default:
+		for i := range elems {
+			res = append(res, strconv.FormatUint(elems[i], 10))
+		}
+	}
+	return joinStr + strings.Join(res, joinStr)
 }
