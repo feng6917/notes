@@ -132,6 +132,20 @@ git submodule init & git submodule update
 
 ```
 
+#### 本地合并commitID
+```
+# 查看前10个commit
+git log -10
+# 从版本库恢复文件到暂存区，不改动工作区的内容
+git reset --soft 295ac3b842b4ecb6eff1c9954a281a4606a8bc84	# 别人改的commitID
+# add已经跟踪的文件
+git add -u
+# 提交
+git commit -m "修改信息"
+# 强制push以替换远程仓的commitID
+git push --force
+```
+
 
 #### Git 建议使用提交规范
 
