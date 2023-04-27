@@ -146,6 +146,16 @@ git commit -m "修改信息"
 git push --force
 ```
 
+#### 多分支操作
+```
+# 添加新的工作树
+git worktree add ../project-name-branch-name (-b) branch-name
+# 查看工作树列表
+git worktree list
+# 删除工作树
+git worktree remove project-name-branch-name
+```
+
 
 #### Git 建议使用提交规范
 
