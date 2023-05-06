@@ -27,65 +27,62 @@
 
   ```
   列出所有可更新的软件清单命令：sudo apt update
-  
+
   升级软件包：sudo apt upgrade
-  
+
   列出可更新的软件包及版本信息：apt list --upgradeable
-  
+
   升级软件包，升级前先删除需要更新软件包：sudo apt full-upgrade
-  
+
   安装指定的软件命令：sudo apt install <package_name>
-  
+
   安装多个软件包：sudo apt install <package_1> <package_2> <package_3>
-  
+
   更新指定的软件命令：sudo apt update <package_name>
-  
+
   显示软件包具体信息,例如：版本号，安装大小，依赖关系等等：sudo apt show <package_name>
-  
+
   删除软件包命令：sudo apt remove <package_name>
-  
+
   清理不再使用的依赖和库文件: sudo apt autoremove
-  
+
   移除软件包及配置文件: sudo apt purge <package_name>
-  
+
   查找软件包命令： sudo apt search <keyword>
-  
+
   列出所有已安装的包：apt list --installed
-  
+
   列出所有已安装的包的版本信息：apt list --all-versions
   ```
-
-  
 
 - 拷贝文件
 
   ```
   # 拷贝本地文件到服务器 可拷贝多个
   scp test root@VM2:/backup
-  
+
   # 拷贝服务器文件到本地 -r 递归文件夹
   scp -r root@192.168.163.130:/root/ /root
-  
+
   # 拷贝服务器到另一台服务器
   scp root@192.168.163.128:/root/test3 root@192.168.163.130:/backup/
   ```
 
-  
-
 - other
 
-    ```
-    # 查找指定进程格式
-    ps -ef | grep 进程关键字
+  ```
+  # 查找指定进程格式
+  ps -ef | grep 进程关键字
 
-    # 杀死进程 强杀 -9
-    kill -9 PID
+  # 杀死进程 强杀 -9
+  kill -9 PID
 
-    # tail 命令可用于查看文件的内容，有一个常用的参数 -f 常用于查阅正在改变的日志文件。
-    tail -f logs.txt
+  # tail 命令可用于查看文件的内容，有一个常用的参数 -f 常用于查阅正在改变的日志文件。
+  tail -f logs.txt
 
-    # 压缩解压缩
-    tar -zcvf 文件名.tar.gz 要压缩文件路径
-    tar -zxvf 要解压的文件.tar.gz 
+  # 压缩解压缩
+  tar -zcvf 文件名.tar.gz 要压缩文件路径
+  tar -zxvf 要解压的文件.tar.gz
+  ```
 
-
+[命令集合](./readme.md)
