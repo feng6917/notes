@@ -3,7 +3,7 @@
     docker run -it xxxx /bin/bash
 
     # 查看镜像信息
-    docker iamges / docker image ls 
+    docker iamges / docker image ls
 
     # 添加标签 (标签起到引用或快捷方式的作用)
     docker tag destTagImage sourceImage
@@ -23,7 +23,7 @@
 
     # 创建镜像三种形式
     基于已有镜像的容器创建/基于本地模板导入/基于Dockerfile创建
-            
+
     存入和载入镜像
 
     docker save -o dst.tar(指定输出压缩文件) source1-image:tag source2-image:tag ...
@@ -35,7 +35,7 @@
     docker push NAME[:TAG]
 
     # 创建容器
-    docker create 
+    docker create
 
     # 启动容器
     docker start
