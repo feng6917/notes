@@ -1,7 +1,8 @@
 # Notes
 
 ```
- 无知者无畏
+ 屎山上种鲜花，别说，还挺香儿
+                    
 ```
 
 ![img.png](./asserts/stay.01.jpg)

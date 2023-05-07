@@ -1,40 +1,67 @@
-package main
+### 数组、切片、字符串
 
-import (
-	"fmt"
-	"os"
-	"regexp"
-	"sort"
-	"strconv"
-	"strings"
-)
+#### 目录
+- <a href="#数组、切片、字符串之间的关系">数组、切片、字符串之间的关系</a>
+- <a href="#数组">数组</a>
+- <a href="#字符串">字符串</a>
+- <a href="#切片">切片</a>
 
-// ps: 照搬 Go语言高级教程 仅用于笔记记录
 
-/*
-	数组是一种值类型，虽然数组的元素可以被修改，但是数组 本身的赋值和函数传参都是以整体复制的方式处理的。
 
-	字符串底层数据也是对应的字节数组，但是字符串的只读属性禁止了在程序中对底层字节数组的元素的修改。
+#### 数组、切片、字符串之间的关系
+
+-  首先了解一下数据类型
+    ```
+       值类型
+          特点：变量直接存储值,内存通常在 栈 (stack) 中分配。
+          包含：
+             所有整型
+             所有浮点型
+             bool型
+             string型
+             数组
+             struct型
+       引用类型
+          特点：变量存储的是一个地址,这个地址对应的空间才真正存储的数据,内存分配通常在 堆 (heap) 上分配。
+          包含：
+             指针
+             slice
+             map
+             chan
+             interface
+    ```
+- 数组、切片、字符串 三者皆是数组,首先了解一下什么是数组
+    ```
+    数组是一种值类型,虽然数组的元素可以被修改，但是数组本身的赋值和函数传参都是以整体复制的方式处理的.
+    ```
+- 接下来了解一下字节数组构成的字符串类型
+    ```
+    字符串底层数据也是对应的字节数组，但是字符串的只读属性禁止了在程序中对底层字节数组的元素的修改。
 	字符串赋值 只是复制了数据地址和对应的长度，而不会导致底层数据的复制。
-
+    ```
+- 最后了解一下灵活的数组-切片
+    ```
     切片的行为更为灵活，切片的结构和字符串结构类似，但是解除了只读限制。
 	切片的底层数据虽然也是对应数据类型的 数组，但是每个切片还有独立的长度和容量信息，切片赋值和 函数传参数时也是将切片头信息部分按传值方式处理。
 	切片头含有底层数据的指针，所以它的赋值也不会导致底层数据 的复制。
+    ```
 
-*/
 
-func main() {
-	// array
-	// 数组是一个由固定长度的特定类型元素组成的序列，一个数组 可以由零个或多个元素组成。数组的长度是数组类型的组成部分。
-	// 因为数组的长度是数组类型的一个部分，不同长度或不同 类型的数据组成的数组都是不同的类型，因此在Go语言中很 少直接使用数组(不同长度的数组因为类型不同无法直接赋 值)。
+####  数组
 
-	// 数组定义方式:
-	var a [3]int              // int 型数组, 元素全部为0
+```
+数组是一个由固定长度的特定类型元素组成的序列，一个数组可以由零个或多个元素组成。数组的长度是数组类型的组成部分。
+
+因为数组的长度是数组类型的一个部分，不同长度或不同类型的数据组成的数组都是不同的类型，因此在Go语言中很少直接使用数组(不同长度的数组因为类型不同无法直接赋值)。
+```
+数组定义方式
+```
+    var a [3]int              // int 型数组, 元素全部为0
 	var b = [...]int{1, 2, 3} // int类型数组, 元素为 1, 2, 3
-	// 定义一个长度为3的int类 //定义一个长度为3的
+
 	var c = [...]int{2: 3, 1: 2}    //定义一个长度为3 的int类型数组, 元素为 0, 2, 3
 	var d = [...]int{1, 2, 4: 5, 6} //定义一个长度为 6的int类型数组, 元素为 1, 2, 0, 0, 5, 6
-	fmt.Println(a, b, c, d)
+	
 
 	var e = [...]int{1, 2, 3} // e是一个数组
 	var f = &e                // f 是指向数组的指针
@@ -44,16 +71,26 @@ func main() {
 	for i, v := range f { // 通过数组指针迭代数组的元素
 		fmt.Println(i, v)
 	}
+```
 
-	// string
-	// 一个字符串是一个不可改变的字节序列，字符串通常是用来包含人类可读的文本数据。
-	// 字符串的元素不可 修改，是一个只读的字节数组。
-	// 每个字符串的长度虽然也是固 定的，但是字符串的长度并不是字符串类型的一部分。字符串可以包含任意的数据.
+<a href="#目录">回到顶部</a>
 
-	// slice
-	// 切片就是一种简化版的动态数组。因为动态数组的长度是不固定，切片的长度自然也就不能是类型的组成部分了。
-	// 切片定义方式:
-	var (
+#### 字符串
+```
+一个字符串是一个不可改变的字节序列，字符串通常是用来包含人类可读的文本数据。
+字符串的元素不可 修改，是一个只读的字节数组。
+每个字符串的长度虽然也是固 定的，但是字符串的长度并不是字符串类型的一部分。字符串可以包含任意的数据.
+```
+
+<a href="#目录">回到顶部</a>
+
+#### 切片
+```
+切片就是一种简化版的动态数组。因为动态数组的长度是不固定，切片的长度自然也就不能是类型的组成部分了。
+```
+切片定义方式
+```
+var (
 		a_ []int               // nil切片, 和 nil 相等, 一般用来表示一个不存在的切片
 		b_ = []int{}           // 空切片,和nil不相等,一般用来 表示一个空的集合
 		c_ = []int{1, 2, 3}    // 有3个元素的切片,len和cap 都为3
@@ -65,9 +102,10 @@ func main() {
 		i_ = make([]int, 0, 3) // 有0个元素的切片,len为0, cap为3
 	)
 	fmt.Println(a_, b_, c_, d_, e_, f_, g_, h_, i_)
-	fmt.Println("1")
+```
+追加元素
+```
 
-	// 添加切片元素
 	a_ = append(a_, 1)                 // 追加1个元素
 	a_ = append(a_, 1, 2, 3)           //追加多个元素,手写解 包方式
 	a_ = append(a_, []int{1, 2, 3}...) //追加一个切片,切片 需要解包
@@ -83,8 +121,9 @@ func main() {
 	a_ = append(a_, 0)     // 切片扩展1个空间
 	copy(a_[i+1:], a_[i:]) // a[i:]向后移动1个位置
 	a_[i] = x              // 设置新添加的元素
-
-	// 删除切片元素
+```
+删除元素
+```
 	N := 2
 	a_ = a_[:len(a_)-1] // 删除尾部1个元素
 	a_ = a_[:len(a_)-N] // 删除尾部N个元素
@@ -114,104 +153,11 @@ func main() {
 	ae[len(ae)-1] = nil // GC回收最后一个元素内存
 	ae = ae[:len(ae)-1]
 	fmt.Println(ae)
+```
 
-	// 数组比较
-	Uint64SliceEqualBCE([]uint64{1}, []uint64{2})
-	// 数组去重并排序
-	RemoveDuplicationMap([]uint64{1, 1})
-	// 数组转字符串
-	uint2string([]uint64{1}, "-")
 
-}
+<a href="#目录">回到顶部</a>
 
-func Filter(s []byte, fn func(x byte) bool) []byte {
-	b := s[:0]
-	for _, x := range s {
-		if !fn(x) {
-			b = append(b, x)
-		}
-	}
-	return b
-}
-
-func FindPhoneNumber(filename string) []byte {
-	b, _ := os.ReadFile(filename)
-	b = regexp.MustCompile("[0-9]+").Find(b)
-	return append([]byte{}, b...)
-}
-
-type Repo struct {
-	Value int
-}
-
-func NewRepo(v int) *Repo {
-	return &Repo{Value: v}
-}
-
-// Array 数组传参 值传递 函数内修改无效
-func (c *Repo) Array(nums [1]int) {
-	nums[0] = c.Value
-}
-
-// Slice slice传参 引用传递 函数内修改有效
-func (c *Repo) Slice(nums []int) {
-	nums[0] = c.Value
-}
-
-// ArrayPointer 数组传参 指针传递 函数内修改有效
-func (c *Repo) ArrayPointer(nums *[1]int) {
-	nums[0] = c.Value
-}
-
-// 数组比较
-func Uint64SliceEqualBCE(a, b []uint64) bool {
-	if len(a) != len(b) {
-		return false
-	}
-
-	if (a == nil) != (b == nil) {
-		return false
-	}
-
-	b = b[:len(a)]
-	for i, v := range a {
-		if v != b[i] {
-			return false
-		}
-	}
-	return true
-}
-
-// 数组去重并排序
-func RemoveDuplicationMap(arr []uint64) []uint64 {
-	set := make(map[uint64]struct{}, len(arr))
-	j := 0
-	for _, v := range arr {
-		_, ok := set[v]
-		if ok {
-			continue
-		}
-		set[v] = struct{}{}
-		arr[j] = v
-		j++
-	}
-	arr = arr[:j]
-	sort.Slice(arr, func(i, j int) bool {
-		return arr[i] < arr[j]
-	})
-	return arr
-}
-
-// 数组转字符串
-func uint2string(elems []uint64, joinStr string) string {
-	var res []string
-	switch len(elems) {
-	case 0:
-		return ""
-	default:
-		for i := range elems {
-			res = append(res, strconv.FormatUint(elems[i], 10))
-		}
-	}
-	return joinStr + strings.Join(res, joinStr)
-}
+```
+// ps: 照搬 Go语言高级教程 仅用于笔记记录
+```

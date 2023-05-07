@@ -2,7 +2,7 @@
 
 基础篇
 
-- [数组切片字符串](./base/arraySliceString/)
+- [数组切片字符串](./base/array-slice-string/readme.md)
 - [test](./base/test/)
 - []()
 - []()
