@@ -22,5 +22,8 @@
 	o.SRepo = s
 	o.Buy()
 
-	o.Sale()```
+	o.Sale()
+```
+
+[Golang目录](../../readme.md)
 

@@ -37,12 +37,14 @@ func deal2(ctx context.Context, cancel context.CancelFunc) {
 	}
 }
 
+// 自动结束
 func timeoutA() {
 	ctx, cancel := newContextWithTimeOut()
 	defer cancel()
 	deal(ctx)
 }
 
+// 手动结束
 func timeoutA1() {
 	ctx, cancel := newContextWithTimeOut()
 	defer cancel()

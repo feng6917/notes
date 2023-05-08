@@ -5,7 +5,6 @@ import (
 	"time"
 )
 
-
 func CloseA() {
 	var ch = make(chan int)
 	go func() {
@@ -89,4 +88,22 @@ func CloseA2() {
 	}()
 
 	time.Sleep(1 * time.Second)
+}
+
+func mClose() {
+	// close.CloseA
+	// 1. 定义一个chan, 写入n个值, 写入完成关闭
+	// 2. 并发读取，读取到特定值，读取结束 break
+	// 需要单独判断值，不建议使用
+
+	// close.CloseA1
+	// 1. 并发读取，读取到特定值，读取结束 break
+	// 2. 并发写入，写入完成，关闭
+	// 写入阻塞，chan未关闭，不建议使用
+
+	// close.CloseA2
+	// 同A1,多了一个判断chan,当读取完成时，设置该chan为true,
+	// 每次写入时获取判断chan值，为true停止写入，关闭chan
+	CloseA2()
+
 }

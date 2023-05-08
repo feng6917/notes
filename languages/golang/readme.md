@@ -3,6 +3,9 @@
 基础篇
 
 - [数组切片字符串](./base/array-slice-string/readme.md)
+- [channel](./base/channel/readme.md)
+- [context](./base/context/readme.md)
+- [goroutine](./base/goroutine/readme.md)
 - [test](./base/test/)
 - []()
 - []()
@@ -17,7 +20,7 @@
 
 问题篇
 
-- [循环引用](./Q%26A/circularReference/)
+- [循环引用](./Q%26A/circularReference/readme.md)
 - []()
 - []()
 - []()
