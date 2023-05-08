@@ -28,3 +28,12 @@ func TestRepo_ArrayPointer(t *testing.T) {
 		t.Errorf("got %d, want %d", nums[0], r.Value)
 	}
 }
+
+func TestReverseString(t *testing.T) {
+	s := "123456"
+	want := "654321"
+	got := ReverseString(s)
+	if got != want {
+		t.Errorf("got %s want %s", got, want)
+	}
+}
