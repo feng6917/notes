@@ -83,6 +83,14 @@
   # 压缩解压缩
   tar -zcvf 文件名.tar.gz 要压缩文件路径
   tar -zxvf 要解压的文件.tar.gz
+
+  # shell中可能经常能看到：echo log > /dev/null 2>&1
+    命令的结果可以通过%>的形式来定义输出
+    /dev/null ：代表空设备文件
+    >  ：代表重定向到哪里，例如：echo "123" > /home/123.txt
+    1  ：表示stdout标准输出，系统默认值是1，所以">/dev/null"等同于"1>/dev/null"
+    2  ：表示stderr标准错误
+    &  ：表示等同于的意思，2>&1，表示2的输出重定向等同于1
   ```
 
 [命令集合](./readme.md)
