@@ -10,6 +10,9 @@ git branch
 # 创建新分支，新的分支基于上一次提交建立
 git branch <分支名>
 
+# 重命名本地分支. 
+git branch -m new_branch_name
+
 # 删除指定的本地分支
 git branch -d <分支名称>
 
