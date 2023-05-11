@@ -3,9 +3,9 @@ package main
 import (
 	"flag"
 	"fmt"
-	"golang/util"
-	"golang/util/file"
-	"golang/util/hex"
+	"lgo/util"
+	"lgo/util/file"
+	"lgo/util/hex"
 	"os"
 	"strings"
 )

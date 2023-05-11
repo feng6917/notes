@@ -2,20 +2,6 @@
 
 - 2. 插件安装(建议使用 VPN 安装)
 
-  - Chinese (Simplified) (简体中文) L （适用于 VS Code 的中文（简体）语言包）
-  - Go （Go for Visual Studio Code）
-  - json （美化 json 插件）
-  - open in browser （右击选中默认的浏览器打开 html 文件）
-  - Path Intellisense （路径提示插件）
-  - Prettier - Code formatter （自动格式化插件）
-  - Styled-Components Snippets
-  - vscode-icons （可以控制 vscode 中的文件管理的树目录显示图标）
-  - vscode-styled-components （语法提示高亮）
-  - Git Extension Pack
-  - GitLens — Git supercharged
-  - Comment Translate
-  - ctr+shift+p go tools install && install/update tools
-
 - 3. 设置-配置调整（settings.json）
 
   - 3.1 设置代理

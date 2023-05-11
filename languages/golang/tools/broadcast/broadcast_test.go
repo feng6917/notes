@@ -1,9 +1,10 @@
 package broadcast
 
 import (
-	"github.com/dustin/go-broadcast"
 	"testing"
 	"time"
+
+	"github.com/dustin/go-broadcast"
 )
 
 func TestNewDataEvent(t *testing.T) {
@@ -25,7 +26,7 @@ func TestDataEvent_Publish(t *testing.T) {
 
 	// 发布（生产）数据
 	var v int
-	v = 0
+	v = 1
 	r.Publish(&v)
 
 	time.Sleep(3 * time.Second)
