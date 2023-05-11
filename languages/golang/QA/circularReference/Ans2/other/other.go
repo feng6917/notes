@@ -1,9 +1,9 @@
 package other
 
 import (
-	"circularRe/Ans2/people"
-	"circularRe/Ans2/store"
 	"fmt"
+	"lgo/QA/circularReference/Ans2/people"
+	"lgo/QA/circularReference/Ans2/store"
 )
 
 type Other struct {

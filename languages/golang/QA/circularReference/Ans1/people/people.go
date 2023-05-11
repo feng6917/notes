@@ -1,8 +1,8 @@
 package people
 
 import (
-	"circularRe/Ans1/Other"
 	"fmt"
+	"lgo/QA/circularReference/Ans1/Other"
 )
 
 type People struct {

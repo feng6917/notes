@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"golang/util/hex"
+	"lgo/util/hex"
 	"strconv"
 	"strings"
 	"time"
@@ -63,19 +63,18 @@ func main() {
 
 ROOTLABEL:
 	loginNameCount, urlAddressCount, err := allPwds(db)
-	if err != nil{
+	if err != nil {
 		fmt.Println("统计数据表数据失败, 错误: ", err)
 		return
 	}
-	
+
 	s1 := getStr(strconv.Itoa(loginNameCount), " ")
 	s2 := getStr(strconv.Itoa(urlAddressCount), " ")
-	
 
 	tip := "==========================================================\r\n" +
 		"=                        密码箱                          =\r\n" +
-		"= 存储网址数量: " +s2 + "=\r\n" +
-		"= 存储账号数量: " +s1 + "=\r\n" +
+		"= 存储网址数量: " + s2 + "=\r\n" +
+		"= 存储账号数量: " + s1 + "=\r\n" +
 		"=--------------------------------------------------------=\r\n" +
 		"= 提示:                                                  =\r\n" +
 		"= 1. 退出系统: 在任意输入位置输入 'Q/q' .                =\r\n" +
@@ -136,9 +135,9 @@ LOGINNAMETLABEL:
 			time.Sleep(time.Second * 1)
 			fmt.Println("\r\n密码已删除")
 			err = pwdDelete(db)
-			if err != nil{
+			if err != nil {
 				printErrorStr("密码重置失败")
-			}	
+			}
 			fmt.Println("\r\n密码箱重置成功.")
 			gotoRoot()
 			fmt.Println(splitStr)
@@ -210,7 +209,7 @@ func printErrorStr(errStr string) {
 func allPwds(db *gorm.DB) (int, int, error) {
 	var loginNameCount, urlAddressCount int64
 	err := db.Table("pwds").Count(&loginNameCount).Error
-	if err != nil{
+	if err != nil {
 		return 0, 0, err
 	}
 	err = db.Table("pwds").Group("url_address").Count(&urlAddressCount).Error
@@ -243,11 +242,11 @@ func gotoRoot() {
 	fmt.Println(splitStr)
 }
 
-func getStr(s string, ns string) string{
+func getStr(s string, ns string) string {
 	sl := len([]rune(s))
 	l := 41 - sl
-	if l > 0{
-		for i := 0; i < l; i ++{
+	if l > 0 {
+		for i := 0; i < l; i++ {
 			s += ns
 		}
 	}

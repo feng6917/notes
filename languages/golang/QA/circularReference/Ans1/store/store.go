@@ -1,8 +1,8 @@
 package store
 
 import (
-	"circularRe/Ans1/Other"
 	"fmt"
+	"lgo/QA/circularReference/Ans1/Other"
 )
 
 type Store struct {
