@@ -7,14 +7,6 @@ import (
 	"testing"
 )
 
-/*
-测试 该路径下所有测试
-go test -v ./
-
-测试 指定某个测试
-go test -v -run TestSum ./
-*/
-
 func TestMain(m *testing.M) {
 	fmt.Println("全局测试前执行操作,初始化服务、数据库及创建数据等")
 	// 如果 TestMain 使用了 flags，这里应该加上flag.Parse()

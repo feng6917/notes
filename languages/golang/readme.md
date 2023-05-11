@@ -6,9 +6,10 @@
 - [channel](./base/channel/readme.md)
 - [context](./base/context/readme.md)
 - [goroutine](./base/goroutine/readme.md)
-- [select](./base//select/readme.md)
-- [test](./base/test/)
-- []()
+- [select](./base/select/readme.md)
+- [function-method-interfacle](./base/function-method-interface/readme.md)
+- [test](./base/test/readme.md)
+- [ftp](./base/ftp/readme.md)
 - [sort](./base/sort/readme.md)
 
 工具篇
@@ -20,7 +21,7 @@
 
 问题篇
 
-- [循环引用](./Q%26A/circularReference/readme.md)
+- [循环引用](./QA/circularReference/readme.md)
 - []()
 - []()
 - []()

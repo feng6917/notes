@@ -40,4 +40,4 @@
   - [超级整理术](https://drive.google.com/file/d/1rBkNKJ1vuPEJhuv94l3F5dzkL_6Dz0Ad/view?usp=share_link)
   - [人间值得](https://drive.google.com/file/d/1iIO3Za-S9G90GMi7Z_h00WW-P6SdC3Zn/view?usp=share_link)
 
-  [笔记目录](../../README.md)
+[笔记目录](../../README.md)
