@@ -149,15 +149,17 @@ git commit -m "修改信息"
 git push --force
 ```
 
-#### 多分支操作
+#### 删除某次提交
 
 ```
-# 添加新的工作树
-git worktree add ../project-name-branch-name (-b) branch-name
-# 查看工作树列表
-git worktree list
-# 删除工作树
-git worktree remove project-name-branch-name
+# 查询提交日志
+git log -10
+# 基于某个版本tag开始调整
+git rebase -i xxxxxxx
+# 删除某次提交
+pick -> drop
+# 出现 no branch 问题执行 
+git rebase --continue
 ```
 
 #### Git 建议使用提交规范
