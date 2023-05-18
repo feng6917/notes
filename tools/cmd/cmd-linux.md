@@ -78,7 +78,7 @@
   kill -9 PID
 
   # tail 命令可用于查看文件的内容，有一个常用的参数 -f 常用于查阅正在改变的日志文件。
-  tail -f logs.txt
+  tail -f --since 1s logs.txt
 
   # 压缩解压缩
   tar -zcvf 文件名.tar.gz 要压缩文件路径
@@ -90,6 +90,13 @@
     1  ：表示stdout标准输出，系统默认值是1，所以">/dev/null"等同于"1>/dev/null"
     2  ：表示stderr标准错误
     &  ：表示等同于的意思，2>&1，表示2的输出重定向等同于1
+    
+  # 查询端口
+  1. 查询所有
+  netstat -ntlp
+  2. 查询指定 
+  losf -i:xxxx
+  netstat -tunlp |grep xxxx
   ```
 
 [命令集合](./readme.md)
