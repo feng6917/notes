@@ -1,0 +1,6 @@
+参考链接
+https://zhuanlan.zhihu.com/p/513588054
+1. install 
+apt install clang-format
+2. use
+clang-format -style=file -i xxx
