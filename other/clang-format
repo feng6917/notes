@@ -4,3 +4,9 @@ https://zhuanlan.zhihu.com/p/513588054
 apt install clang-format
 2. use
 clang-format -style=file -i xxx
+3. touch .clang-format
+Language: Proto
+ColumnLimit: 1000
+AlignTrailingComments:  true
+PenaltyBreakComment:    1000
+ReflowComments: true
