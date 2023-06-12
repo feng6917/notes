@@ -57,6 +57,14 @@ kubectl get pod --namespace kube-system
 kubectl cp ./server-name pod-name:/dir-name
 ```
 
+##### 查看pod多个容器日志
+```
+1. 查看指定pod中容器信息 
+kubectl -n tidb-cluster get pods basic-tidb-0 -o jsonpath={.spec.containers[*].name}
+2. 查看指定pod 指定容器 日志 -c 置顶容器
+kubectl -n tidb-cluster logs basic-tidb-0 -c tidb
+```
+
 [命令集合](./readme.md)
 
 ​
