@@ -17,7 +17,7 @@
 - [bigcache 缓存](./tools/bigcache/)
 - [broadcast 广播](./tools/broadcast/)
 - [nsq 消息队列](./tools/nsq/)
-- []()
+- [gorm 基础使用](./tools/gorm_server/)
 
 问题篇
 

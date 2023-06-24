@@ -4,10 +4,13 @@ go 1.20
 
 require (
 	fyne.io/fyne/v2 v2.3.4
+	github.com/BurntSushi/toml v1.1.0
 	github.com/adrg/sysfont v0.1.2
 	github.com/allegro/bigcache v1.2.1
 	github.com/dustin/go-broadcast v0.0.0-20211018055107-71439988bd91
+	github.com/go-sql-driver/mysql v1.5.0
 	github.com/gorilla/i18n v0.0.0-20150820051429-8b358169da46
+	github.com/gorilla/mux v1.8.0
 	github.com/jinzhu/gorm v1.9.16
 	github.com/mattn/go-sqlite3 v1.14.16
 	github.com/secsy/goftp v0.0.0-20200609142545-aa2de14babf4
@@ -39,7 +42,6 @@ require (
 	github.com/fyne-io/image v0.0.0-20220602074514-4956b0afb3d2 // indirect
 	github.com/go-gl/gl v0.0.0-20211210172815-726fda9656d6 // indirect
 	github.com/go-gl/glfw/v3.3/glfw v0.0.0-20221017161538-93cebf72946b // indirect
-	github.com/go-sql-driver/mysql v1.5.0 // indirect
 	github.com/go-text/typesetting v0.0.0-20230405155246-bf9c697c6e16 // indirect
 	github.com/godbus/dbus/v5 v5.1.0 // indirect
 	github.com/goki/freetype v0.0.0-20220119013949-7a161fd3728c // indirect

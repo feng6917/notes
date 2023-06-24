@@ -1,6 +1,10 @@
 package example
 
-import "testing"
+import (
+	"testing"
+
+	"github.com/stretchr/testify/assert"
+)
 
 func TestArray(t *testing.T) {
 	r := NewRepo(28)
@@ -30,10 +34,5 @@ func TestRepo_ArrayPointer(t *testing.T) {
 }
 
 func TestReverseString(t *testing.T) {
-	s := "123456"
-	want := "654321"
-	got := ReverseString(s)
-	if got != want {
-		t.Errorf("got %s want %s", got, want)
-	}
+	assert.Equal(t, "654321", ReverseString("123456"))
 }
