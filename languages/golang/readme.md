@@ -11,9 +11,11 @@
 
 - file
     - [fileutil 包支持文件基本操作。](https://github.com/duke-git/lancet/blob/main/docs/fileutil_zh-CN.md#fileutil) 
+    - [File System](github.com/gookit/goutil/fsutil)
 
 - time
     - [datetime 日期时间处理包，格式化日期，比较日期。](https://github.com/duke-git/lancet/blob/main/docs/datetime_zh-CN.md#datetime) 
+    - [Timex](github.com/gookit/goutil/timex)
 
 - net
     - [netutil 网络包支持获取 ip 地址，发送 http 请求。](https://github.com/duke-git/lancet/blob/main/docs/netutil_zh-CN.md#netutil)  
@@ -25,16 +27,31 @@
     - [retry 重试执行函数直到函数运行成功或被 context cancel。](https://github.com/duke-git/lancet/blob/main/docs/retry_zh-CN.md#retry)
 
 - slice 
-    - [slice 包包含操作切片的方法集合。](https://github.com/duke-git/lancet/blob/main/docs/slice_zh-CN.md#slice)  
+    - [slice 包包含操作切片的方法集合。](https://github.com/duke-git/lancet/blob/main/docs/slice_zh-CN.md#slice)
+    - [Array and Slice](github.com/gookit/goutil/arrutil)  
 
 - string
-    - [strutil 包含处理字符串的相关函数。](https://github.com/duke-git/lancet/blob/main/docs/strutil_zh-CN.md)  
+    - [strutil 包含处理字符串的相关函数。](https://github.com/duke-git/lancet/blob/main/docs/strutil_zh-CN.md) 
+    - [Bytes Utils](github.com/gookit/goutil/byteutil) 
+    - [Strings](github.com/gookit/goutil/strutil)
 
 - validator
     - [validator 验证器包，包含常用字符串格式验证函数。](https://github.com/duke-git/lancet/blob/main/docs/validator_zh-CN.md) 
 
 - error
-    - [xerror 错误处理逻辑封装](https://github.com/duke-git/lancet/blob/main/docs/xerror_zh-CN.md#xerror)                        
+    - [xerror 错误处理逻辑封装](https://github.com/duke-git/lancet/blob/main/docs/xerror_zh-CN.md#xerror)    
+    - [Errorx](github.com/gookit/goutil/errorx)
+
+- json
+    - [JSON Utils](github.com/gookit/goutil/jsonutil)
+
+- map
+    - [Map](github.com/gookit/goutil/maputil)
+
+- reflect
+    - [Reflects](github.com/gookit/goutil/reflects)
+
+
 
 工具篇
 
