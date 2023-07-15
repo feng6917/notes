@@ -6,21 +6,29 @@
        "2":"Start pet coding session"
      }
    }, 
-  "Chinese (Simplified) (简体中文) Language":{},
+  "Chinese (Simplified) (简体中文) Language":{
+     "desc":"vscode默认是英文，可安装Chinese 插件 实现中文版本"
+  },
   "Draw.io Integration":{
     "desc":"draw格式文件 编辑"
   }, 
   "Log File Highlighter":{
-    "desc":"日志高亮"
+    "desc":"高亮显示样式颜色"
   }, 
+  "indent-rainbow":{
+     "desc":"带颜色的缩进"
+  }, 
+  "Bracket Pair Colorizer":{
+     "desc":"成对的彩色括号，让括号拥有独立的颜色，便于区分"
+  },
   "open in browser":{
-    "desc":"在浏览器中打开页面"
+    "desc":"vscode不像IDE一样能够直接在浏览器中打开html，而该插件支持快捷键与鼠标右键快速在浏览器中打开html文件，支持自定义打开指定的浏览器，包括：Firefox，Chrome，Opera，IE以及Safari"
   }, 
   "styled-components-snippets":{
     "desc":"样式调整"
   }, 
-  "vscode-icons": {
-    "desc":"文件类型图标"
+  "vscode-icons(侧边栏图标插件)": {
+    "desc":" 可以实现对各种文件类型的文件前的图标进行优化显示，这样我们在查看长长的文件列表的时候，可以直接通过文件的图标就可以快速知道文件的类型"
   },
   "Clang-Format proto":{
     "desc": "文件格式化",
@@ -43,7 +51,7 @@
   },
   "markdownlint":{},
   "Path Intellisense":{
-    "desc":"路径自动补全"
+    "desc":"在编辑器中输入路径的时候，能自动补全"
   }, 
   "Prettier - Code formatter" :{
     "desc":"代码格式化"
