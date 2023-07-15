@@ -1,0 +1,51 @@
+{
+   "vscode-pets":{
+     "desc":"在 vscode 里养宠物",
+     "cmd":{
+       "1":"Ctrl+Shift+P",
+       "2":"Start pet coding session"
+     }
+   }, 
+  "Chinese (Simplified) (简体中文) Language":{},
+  "Draw.io Integration":{
+    "desc":"draw格式文件 编辑"
+  }, 
+  "Log File Highlighter":{
+    "desc":"日志高亮"
+  }, 
+  "open in browser":{
+    "desc":"在浏览器中打开页面"
+  }, 
+  "styled-components-snippets":{
+    "desc":"样式调整"
+  }, 
+  "vscode-icons": {
+    "desc":"文件类型图标"
+  },
+  "Clang-Format proto":{
+    "desc": "文件格式化",
+    "cmd":{
+      "1": "编写clang-format配置文件",
+      "2" : "settings 中配置proto3, file.autoSave"
+    }
+  },  
+  "code-translator":{
+    "desc":"单词翻译"
+  }, 
+  "Git":{
+    "Git History": {
+      "desc": "文件的历史情况和修改情况"
+    },
+    "GitLens":{}
+  },
+  "Makefile Tools Makefile":{
+    "desc":"工具扩展"
+  },
+  "markdownlint":{},
+  "Path Intellisense":{
+    "desc":"路径自动补全"
+  }, 
+  "Prettier - Code formatter" :{
+    "desc":"代码格式化"
+  } 
+}
