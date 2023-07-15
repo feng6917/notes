@@ -18,9 +18,24 @@
   "indent-rainbow":{
      "desc":"带颜色的缩进"
   }, 
+  "Image preview":{
+     "desc":"鼠标悬浮在链接上可及时预览图片"
+  }, 
   "Bracket Pair Colorizer":{
      "desc":"成对的彩色括号，让括号拥有独立的颜色，便于区分"
   },
+  "Code Spell Checker":{
+     "desc":"检测单词拼写"
+  },
+  "Project Manager":{
+     "desc": "多个项目之间快速切换"
+  },
+  "Visual Studio IntelliCode":{
+     "desc":"辅助开发"
+  }, 
+  "Todo Tree":{
+     "desc": "代办事项树"
+  }, 
   "open in browser":{
     "desc":"vscode不像IDE一样能够直接在浏览器中打开html，而该插件支持快捷键与鼠标右键快速在浏览器中打开html文件，支持自定义打开指定的浏览器，包括：Firefox，Chrome，Opera，IE以及Safari"
   }, 
@@ -44,7 +59,12 @@
     "Git History": {
       "desc": "文件的历史情况和修改情况"
     },
-    "GitLens":{}
+    "GitLens":{
+       "desc": "强烈推荐 git工具 可在代码行中查看谁提交的 清晰追溯 目前我只用到这个工具中的这个功能"
+    },
+    "Git Graph":{
+       "desc": "强烈推荐 可以查看git提交历史 现在所处分支 提交内容明细 以及回滚删除分支等操作"
+    } 
   },
   "Makefile Tools Makefile":{
     "desc":"工具扩展"
