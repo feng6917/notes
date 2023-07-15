@@ -23,7 +23,7 @@
   - 6.2 点击左下角 SSH -> Remote SSH -> + Add New SSH HOST.. -> 页面 启动 打开文件夹
   - 6.3 本地部分插件无法使用需要在远程服务器上进行安装
  
-- 7. setting.json 配置 [🔗](./settings.json)
+- 7. settings.json 配置 [🔗](./settings.json)
 - 插件集合
   - VsCode+WSL+Docker 开发环境构建指南 
     -  配置
