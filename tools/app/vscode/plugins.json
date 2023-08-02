@@ -70,7 +70,7 @@
   "Path Intellisense":{
     "desc":"在编辑器中输入路径的时候，能自动补全"
   }, 
-  "Prettier - Code formatter" :{
-    "desc":"代码格式化"
+  "Prettier - Code formatter 勿用" :{
+    "desc":"代码格式化 "
   } 
 }
