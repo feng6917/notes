@@ -18,7 +18,9 @@ helm delete --purge chart-name
 
 # 安装chart
 helm install -name chart-name --namespace namespace-name chart-path/
+(helm v3.0) helm install chart-name chart-path/ -n namespace 
 
 # 卸载chart 
 helm uninstall chart-name --namespace namespace-name
+(helm v3.0) helm uninstall chart-name -n namespace 
 ```
