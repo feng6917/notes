@@ -21,8 +21,8 @@
   "Image preview":{
      "desc":"鼠标悬浮在链接上可及时预览图片"
   }, 
-  "Bracket Pair Colorizer":{
-     "desc":"成对的彩色括号，让括号拥有独立的颜色，便于区分"
+  "Go":{
+     "desc":"ctrl+shift+p go tools install"
   },
   "Code Spell Checker":{
      "desc":"检测单词拼写"
