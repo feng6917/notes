@@ -49,7 +49,8 @@
     "desc": "文件格式化",
     "cmd":{
       "1": "编写clang-format配置文件",
-      "2" : "settings 中配置proto3, file.autoSave"
+      "2" : "settings 中配置proto3, file.autoSave",
+      "3" :"install app & apt install clang-format"
     }
   },  
   "code-translator":{
