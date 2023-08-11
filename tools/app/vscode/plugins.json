@@ -62,6 +62,9 @@
     },
     "Git Graph":{
        "desc": "强烈推荐 可以查看git提交历史 现在所处分支 提交内容明细 以及回滚删除分支等操作"
+    },
+     "Git Lens":{
+       "desc": "强烈推荐 增强 VSCode 内置 Git 的功能。例如 commits 搜索，历史记录和显示的代码作者身份具体功能可以查看Feature list"
     } 
   },
   "Makefile Tools Makefile":{
