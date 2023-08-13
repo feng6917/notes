@@ -76,5 +76,12 @@
   }, 
   "Prettier - Code formatter 勿用" :{
     "desc":"代码格式化 "
+  },
+    "epub reader" :{
+    "desc":"转换 https://convertio.co/zh/txt-epub/",
+     "cmd":{
+        "1": "ctrl+3 调整快捷方式",
+        "2": "A D 上下"
+     }  
   } 
 }
