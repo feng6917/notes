@@ -10,7 +10,7 @@ kubectl edit deployment app
 # 查看 pod
 kubectl get pod -o wide
 # 查看 pod 详情
-kubectl describe pod pod-name
+kubectl describe pod pod-name | grep xxx -A 10
 # 查看 log
 kubectl logs pod-name --tail 20
 # 查看所有容器 日志
