@@ -68,6 +68,15 @@
   scp root@192.168.163.128:/root/test3 root@192.168.163.130:/backup/
   ```
 
+- 压缩解压缩文件
+
+  ```
+  # 压缩文件(带不带gz取决于带不带z)
+  tar -zcvf test.tar.gz ./xxx
+  # 解压缩
+  tar -zxvf ./test.tar.gz
+  ```  
+
 - other
 
   ```
