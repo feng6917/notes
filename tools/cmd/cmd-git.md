@@ -149,6 +149,26 @@ git commit -m "修改信息"
 git push --force
 ```
 
+#### 分支基于rebase合并
+```
+git pull = git fetch + git merge
+分支合并 dev 合并 到 master
+1. 切换到master 拉取最新代码 git pull
+2. 基于master调整 git rebase master
+3. 根据提示处理
+	3.1 没有改变 可以进行跳过 
+		提示信息：NOCHANGE ... 
+		操作：git rebase skip
+	3.2 有冲突 解决冲突 提交
+		提示信息： CONFLICT ...
+		操作：1. 解决冲突
+			 2. 提交 git add .
+			 3. 提交注释 git commit xxx
+			 4. 查看状态 git status
+			 5. 继续 git rebase --continue
+4. 推送 git push
+```
+
 #### 删除某次提交
 
 ```
