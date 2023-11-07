@@ -30,7 +30,7 @@ import (
 )
 
 type Base struct {
-	Code string // 股票代码加沪深代码 sz002307,sh600928
+	Code string `gorm:"primaryKey;comment:代码"` // 股票代码加沪深代码 sz002307,sh600928
 }
 
 /*
@@ -62,7 +62,7 @@ type Base struct {
 */
 
 type Msg struct {
-	Code         string  // 代码
+	Code         string  `gorm:"primaryKey;comment:代码"` // 代码
 	Name         string  // 名称
 	StartPrice   float64 // 开盘价
 	CurrentPrice float64 // 当前价
@@ -92,6 +92,8 @@ func init() {
 	}
 	// 迁移 schema
 	db.AutoMigrate(&Base{}, &Msg{})
+	_ = db.Model(&Base{}).Create(&Base{Code: "sz002307"}).Error
+
 	DB = db
 }
 
@@ -226,7 +228,7 @@ func splitBody(req string) (*Msg, error) {
 	for index, tmp := range l2 {
 		if index == 0 {
 			res.Name = tmp
-		} else if index == 1 {
+		} else if index == 2 {
 			pr, err := strconv.ParseFloat(tmp, 64)
 			if err != nil {
 				log.Errorf("StartPrice parse fail, err: %v", err)
@@ -245,43 +247,43 @@ func splitBody(req string) (*Msg, error) {
 		} else if index == 10 {
 			res.Buy1 = tmp
 		} else if index == 11 {
-			res.Buy1 = tmp + " - " + res.Buy1
+			res.Buy1 = tmp + " - " + getTr(res.Buy1)
 		} else if index == 12 {
 			res.Buy2 = tmp
 		} else if index == 13 {
-			res.Buy2 = tmp + " - " + res.Buy2
+			res.Buy2 = tmp + " - " + getTr(res.Buy2)
 		} else if index == 14 {
 			res.Buy3 = tmp
 		} else if index == 15 {
-			res.Buy3 = tmp + " - " + res.Buy3
+			res.Buy3 = tmp + " - " + getTr(res.Buy3)
 		} else if index == 16 {
 			res.Buy4 = tmp
 		} else if index == 17 {
-			res.Buy4 = tmp + " - " + res.Buy4
+			res.Buy4 = tmp + " - " + getTr(res.Buy4)
 		} else if index == 18 {
 			res.Buy5 = tmp
 		} else if index == 19 {
-			res.Buy5 = tmp + " - " + res.Buy5
+			res.Buy5 = tmp + " - " + getTr(res.Buy5)
 		} else if index == 20 {
 			res.Sale1 = tmp
 		} else if index == 21 {
-			res.Sale1 = tmp + " - " + res.Sale1
+			res.Sale1 = tmp + " - " + getTr(res.Sale1)
 		} else if index == 22 {
 			res.Sale2 = tmp
 		} else if index == 23 {
-			res.Sale2 = tmp + " - " + res.Sale2
+			res.Sale2 = tmp + " - " + getTr(res.Sale2)
 		} else if index == 24 {
 			res.Sale3 = tmp
 		} else if index == 25 {
-			res.Sale3 = tmp + " - " + res.Sale3
+			res.Sale3 = tmp + " - " + getTr(res.Sale3)
 		} else if index == 26 {
 			res.Sale4 = tmp
 		} else if index == 27 {
-			res.Sale4 = tmp + " - " + res.Sale4
+			res.Sale4 = tmp + " - " + getTr(res.Sale4)
 		} else if index == 28 {
 			res.Sale5 = tmp
 		} else if index == 29 {
-			res.Sale5 = tmp + " - " + res.Sale5
+			res.Sale5 = tmp + " - " + getTr(res.Sale5)
 		} else if index == 30 {
 			res.Time = tmp
 		} else if index == 31 {
@@ -291,11 +293,11 @@ func splitBody(req string) (*Msg, error) {
 	// change := res.CurrentPrice - res.StartPrice
 	var change string
 	pr := ((res.CurrentPrice - res.StartPrice) / res.StartPrice) * 100
-	if pr >= 0 {
-		change += "+"
-	} else {
-		change += "-"
-	}
+	// if pr >= 0 {
+	// 	change += "+"
+	// } else {
+	// 	change += "-"
+	// }
 	res.Change = change + fmt.Sprintf("%.2f", pr)
 	res.Name, _ = GbkToUtf8(res.Name)
 	res.MinImage = "https://image.sinajs.cn/newchart/min/n/" + res.Code + ".gif"
@@ -310,5 +312,12 @@ func GbkToUtf8(s string) (string, error) {
 	}
 	return string(d), nil
 }
+
+func getTr(s string) string {
+	ti, _ := strconv.Atoi(s)
+	tr := ti / 100
+	return strconv.Itoa(tr)
+}
+
 
 ```
