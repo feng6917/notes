@@ -132,6 +132,11 @@ git submodule add <submodule_url>
 一种可行的方式是，在当前主项目中执行：
 git submodule init & git submodule update
 
+# 删除全局配置
+git config --global --unset user.name
+# 删除局部配置
+git config --unset user.name
+
 ```
 
 #### 本地合并 commitID
