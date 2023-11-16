@@ -1,3 +1,7 @@
+- 临时设置时区
+  ```
+  cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+  ```
 - 处理目录的常用命令
 
   ```
