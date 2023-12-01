@@ -172,6 +172,13 @@ git pull = git fetch + git merge
 			 4. 查看状态 git status
 			 5. 继续 git rebase --continue
 4. 推送 git push
+
+5. 基于分支下某文件夹、文件合并 new_branch 合并 old_branch
+5.1 git checkout old_branch
+5.2 git pull
+5.3 git checkout new_branch
+5.4 git pull
+5.5 git checkout old_branch dir/file
 ```
 
 #### 删除某次提交
