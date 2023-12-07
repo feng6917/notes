@@ -17,3 +17,4 @@ AlignConsecutiveAssignments: true
  // proto3 格式化 
   "[proto3]": {
     "editor.defaultFormatter": "xaver.clang-format"
+3. 无法使用手动安装 apt install clang-format
