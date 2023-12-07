@@ -112,4 +112,21 @@
   netstat -tunlp |grep xxxx
   ```
 
+- grep
+
+  ```
+  grep -v 排除内容
+  grep -B 显示匹配行和之前num行
+  grep -A 显示匹配行和之后num行
+  grep -C 显示匹配行和前后num行
+  grep --color=auto 匹配字符串加色显示
+  grep -n 打印行号
+  grep -i 不区分大小写
+  grep -w 匹配单词
+  grep -E 即egrep使用扩展正则表达式
+  grep -e 匹配多个模式
+  grep -c 匹配到的行数
+  ```
+  
+
 [命令集合](./readme.md)
