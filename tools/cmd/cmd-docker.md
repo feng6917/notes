@@ -100,6 +100,11 @@
     # FROM 格式为FROM image /image:tag
     第一条指令必须为FROM指令。并且，如果在同一个Dockerfile中创建多个镜像时，可以使用多个FROM指令（每个镜像一次）
 
+    # 二次封装镜像
+    1. 运行镜像 docker run -it xxx:xxx /bin/bash
+    2. root@7e7570d0a997:/# 执行相应操作（下载安装等）
+    3. 打包镜像 docker commit -m "操作内容" 7e7570d0a997 xxx:xxx
+
 ```
 
 [命令集合](./readme.md)
