@@ -1,7 +1,25 @@
-- 临时设置时区
+- 设置时区
   ```
+  临时
   cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
   ```
+
+   ```
+      root@ubuntu1804:~# apt install ntpdate
+
+      root@ubuntu1804:~# date 
+      Tue Dec 13 15:12:07 CST 2022
+      
+      root@ubuntu1804:~# date -d '-1 day'
+      Mon Dec 12 15:12:22 CST 2022
+      
+      root@ubuntu1804:~# ntpdate ntp.aliyun.com
+      13 Dec 15:12:36 ntpdate[15040]: adjust time server 203.107.6.88 offset 0.002588 sec
+      
+      root@ubuntu1804:~# date 
+      Tue Dec 13 15:12:40 CST 2022  #同步后的时间
+   ```
 - 处理目录的常用命令
 
   ```
