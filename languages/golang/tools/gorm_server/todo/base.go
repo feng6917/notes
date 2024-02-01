@@ -69,6 +69,22 @@ func (c *DbData) Get(tableName string, getParam map[string]interface{}) (interfa
 	return data, err
 }
 
+// Scopes
+func PaidWithCod(db *gorm.DB) *gorm.DB {
+    return db.Where("pay_mode_sign = ?", "C")
+}
+// db.Scopes(PaidWithCreditCard).Find(&orders)
+
+/*
+   多个创建方法
+   当使用 GORM 的创建方法，后面的创建方法将复用前面的创建方法的搜索条件（不包含内联条件）
+   sql: db.Where("name LIKE ?", "jinzhu%").Find(&users, "id IN (?)", []int{1, 2, 3}).Count(&count) 
+   -------------------------
+   SELECT * FROM users WHERE name LIKE 'jinzhu%' AND id IN (1, 2, 3)
+
+   SELECT count(*) FROM users WHERE name LIKE 'jinzhu%'
+*/
+
 //func handle(data *gorm.DB,tx *sql.Tx, sqlStatements []string) {
 //	var err error
 //	if len(sqlStatements) <= 0{
