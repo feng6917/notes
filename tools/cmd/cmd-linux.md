@@ -128,6 +128,12 @@
   2. 查询指定 
   losf -i:xxxx
   netstat -tunlp |grep xxxx
+
+  # 查询文件 空间占用
+  [root@k8s-master-147 glusterVol]# du -sh model/
+  997M	model/
+   
+
   ```
 
 - grep
