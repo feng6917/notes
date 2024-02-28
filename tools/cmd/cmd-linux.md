@@ -132,6 +132,15 @@
   # 查询文件 空间占用
   [root@k8s-master-147 glusterVol]# du -sh model/
   997M	model/
+
+  # 查询服务器中大于1G的文件
+  find / -type f -size +1G
+
+  # 查询服务器中大于1G的文件及属性信息
+  find / -type f -size +1G  -print0 | xargs -0 ls -l
+
+  # 查询大文件并排序
+  find / -type f -size +1G  -print0 | xargs -0 du -h | sort -nr
    
 
   ```
