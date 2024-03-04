@@ -7,6 +7,9 @@
   - [Go 语言程序设计](https://drive.google.com/file/d/1eOdJB5hdXbJAO5CWQAzRW5VlM5RSYrRK/view?usp=share_link)
   - [Go 语言高级编程](https://drive.google.com/file/d/1Mmk9HG_w2yKEsZuQtyNvXM2ApouMOOLR/view?usp=share_link)
   - [GOLANG 修养之路 刘丹冰 Aceld](https://github.com/aceld/golang)
+  - Golang中GC回收机制三色标记与混合写屏障 <a href ="https://www.bilibili.com/video/BV1wz4y1y7Kd"><img src="../asserts/video_play.png"  height="30" width="30" align="bottom">
+  - Golang深入理解GPM模型 <a href ="https://www.bilibili.com/video/BV19r4y1w7Nx"><img src="../asserts/video_play.png"  height="30" width="30" align="bottom">
+  
 - Python
 
   - [轻量级 Django](https://drive.google.com/file/d/1bnPvkckYtK9op3lx9irCNqwKxuO8ozH5/view?usp=share_link)
@@ -34,6 +37,7 @@
  
 - Linux
   -  Linux 7.6 <a href ="https://www.bilibili.com/video/BV16Q4y1y7xS"><img src="../asserts/video_play.png"  height="30" width="30" align="bottom">
+   - Kubernetes (K8S) 3 小时快速上手 + 实践 <a href ="https://www.bilibili.com/video/BV1Tg411P7EB"><img src="../asserts/video_play.png"  height="30" width="30" align="bottom">
 
 - 其他
 
