@@ -33,7 +33,7 @@
   - [人月神话](https://drive.google.com/file/d/1XwVRcPbRu1DmeLmBhIkHBbJgk8Bwk--q/view?usp=share_link)
  
 - Linux
-  -  Linux 7.6 <a href ="https://www.bilibili.com/video/BV16Q4y1y7xS"><img src="../asserts/video_play.png"  height="20" width="20">
+  -  Linux 7.6 <a href ="https://www.bilibili.com/video/BV16Q4y1y7xS"><img src="../asserts/video_play.png"  height="30" width="30" align="bottom">
 
 - 其他
 
