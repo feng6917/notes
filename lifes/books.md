@@ -31,6 +31,9 @@
   - [高效程序员的 45 个习惯](https://drive.google.com/file/d/1hSIeggu8AaOtya_vtMrm8Y_gpQB36c9O/view?usp=share_link)
   - [重构-改善既有代码的设计](https://drive.google.com/file/d/1Np3lTT0yeX0k47UQmFsjILs_6IZMxeWF/view?usp=share_link)
   - [人月神话](https://drive.google.com/file/d/1XwVRcPbRu1DmeLmBhIkHBbJgk8Bwk--q/view?usp=share_link)
+ 
+- Linux
+  -  Linux 7.6 <a href ="https://www.bilibili.com/video/BV16Q4y1y7xS"><img src="../asserts/video_play.png"  height="20" width="20">
 
 - 其他
 
@@ -40,4 +43,4 @@
   - [超级整理术](https://drive.google.com/file/d/1rBkNKJ1vuPEJhuv94l3F5dzkL_6Dz0Ad/view?usp=share_link)
   - [人间值得](https://drive.google.com/file/d/1iIO3Za-S9G90GMi7Z_h00WW-P6SdC3Zn/view?usp=share_link)
 
-[笔记目录](../../README.md)
+[笔记目录](../README.md)
