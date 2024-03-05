@@ -35,7 +35,7 @@
   - [重构-改善既有代码的设计](https://drive.google.com/file/d/1Np3lTT0yeX0k47UQmFsjILs_6IZMxeWF/view?usp=share_link)
   - [人月神话](https://drive.google.com/file/d/1XwVRcPbRu1DmeLmBhIkHBbJgk8Bwk--q/view?usp=share_link)
  
-- Linux
+- 系统
   -  Linux 7.6 <a href ="https://www.bilibili.com/video/BV16Q4y1y7xS"><img src="../asserts/video_play.png"  height="30" width="30" align="bottom">
    - Kubernetes (K8S) 3 小时快速上手 + 实践 <a href ="https://www.bilibili.com/video/BV1Tg411P7EB"><img src="../asserts/video_play.png"  height="30" width="30" align="bottom">
 
