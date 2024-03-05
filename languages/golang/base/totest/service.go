@@ -5,19 +5,19 @@ import (
 )
 
 type Service struct {
-	d *Dao
+	Repo *Repo
 }
 
-func (c *Service) Init(
-	:= gorm.Open("sqlite3", "pwd.db")
+func (c *Service) Init() *Service {
+	gdb, err := gorm.Open("sqlite3", "pwd.db")
 	if err != nil {
 		panic(err)
 	}
-	d := Dao{}
-	d.
-	c.d = 
-)
+	r := Repo{db: gdb}
+	s := Service{Repo: &r}
+	return &s
+}
 
 func (c *Service) GetDaoName() string {
-	return c.d.GetDaoName()
+	return c.Repo.GetRepoName()
 }

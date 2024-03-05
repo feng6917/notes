@@ -1,9 +1,11 @@
 package convetor
 
 import (
-	"fmt"
-	"strconv"
+	"bytes"
 	"encoding/binary"
+	"fmt"
+	"math"
+	"strconv"
 )
 
 func Float64ToString(f float64) string {
@@ -41,7 +43,6 @@ func byteToFloat32(bytes []byte) float32 {
 	bits := binary.LittleEndian.Uint32(bytes)
 	return math.Float32frombits(bits)
 }
-
 
 func Float32ToByte(float float32) []byte {
 	bits := math.Float32bits(float)

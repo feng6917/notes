@@ -3,12 +3,13 @@ package main
 import (
 	"flag"
 	"fmt"
+	"lgo/tools/gorm_server"
+	"lgo/tools/gorm_server/config"
+	"lgo/tools/gorm_server/service"
+	"net/http"
+
 	"github.com/gorilla/mux"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	"gorm_server"
-	"gorm_server/config"
-	"gorm_server/service"
-	"net/http"
 )
 
 var configPath string

@@ -1,0 +1,19 @@
+----
+mac
+1. 更换拉取阿里云镜像
+.zpprofile // 自定义的环境变量
+vi ~/.zprofile // 打开文件
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles // 定义变量值
+source ~/.zprofile // 使变量立即生效
+2. 安装npm(http://nodejs.cn/download/ 下载安装)
+brew install node
+npm config set registry https://registry.npm.taobao.org
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+3. vue 最新稳定版
+cnpm install vue@next
+4. 创建项目
+vue create xxx
+----
+win
+https://blog.csdn.net/liuzhenhe1988/article/details/109203873
+vue create xxx

@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	t := T{}
+	t := Manager{}
 	t.Run()
 }
 

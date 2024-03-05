@@ -3,9 +3,9 @@ package service
 import (
 	"errors"
 	"fmt"
-	"gorm_server"
-	"gorm_server/model"
-	"gorm_server/utils"
+	"lgo/tools/gorm_server"
+	"lgo/tools/gorm_server/model"
+	"lgo/tools/gorm_server/utils"
 	"net/http"
 )
 
