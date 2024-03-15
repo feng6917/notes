@@ -1,5 +1,6 @@
 package main
 
+// TODO： nsq 待补充
 func main() {
 	// 消费订阅及心跳参考官方，后续补充吧
 	// https://github.com/nsqio/go-nsq
