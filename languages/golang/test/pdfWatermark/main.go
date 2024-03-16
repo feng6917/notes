@@ -4,6 +4,7 @@ import (
 	"os"
 	"strings"
 
+	"lgo/test/pdfWatermark/pdf"
 	"lgo/test/pdfWatermark/service"
 
 	"fyne.io/fyne/v2"
@@ -24,7 +25,9 @@ func init() {
 }
 
 func main() {
-	runAPP()
+	// pdf.ListImages("test.pdf")
+	// runAPP()
+	pdf.TestMain()
 }
 
 func runAPP() {

@@ -105,7 +105,7 @@ func Screen(w fyne.Window) fyne.CanvasObject {
 		}
 		ProgressOut.SetValue(1)
 		time.Sleep(1 * time.Second)
-		w.Close()
+		// w.Close()
 	})
 
 	return container.New(
