@@ -19,6 +19,7 @@ require (
 	github.com/sirupsen/logrus v1.8.1
 	github.com/stretchr/testify v1.8.4
 	github.com/trimmer-io/go-xmp v1.0.0
+	github.com/twgh/xcgui v1.3.382
 	github.com/unidoc/pkcs7 v0.1.1
 	github.com/unidoc/timestamp v0.0.0-20200412005513-91597fd3793a
 	github.com/unidoc/unichart v0.2.0
