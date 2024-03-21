@@ -3,9 +3,9 @@ package gorm_server
 import (
 	"errors"
 	"fmt"
-	"lgo/tools/gorm_server/config"
-	"lgo/tools/gorm_server/model"
-	"lgo/tools/gorm_server/todo"
+	"lgo/base/gorm_server/config"
+	"lgo/base/gorm_server/model"
+	"lgo/base/gorm_server/todo"
 )
 
 type Manager struct {

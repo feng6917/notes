@@ -3,9 +3,9 @@ package main
 import (
 	"flag"
 	"fmt"
-	"lgo/tools/gorm_server"
-	"lgo/tools/gorm_server/config"
-	"lgo/tools/gorm_server/service"
+	"lgo/base/gorm_server"
+	"lgo/base/gorm_server/config"
+	"lgo/base/gorm_server/service"
 	"net/http"
 
 	"github.com/gorilla/mux"

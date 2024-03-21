@@ -3,7 +3,7 @@ package todo
 import (
 	"errors"
 	"fmt"
-	"lgo/tools/gorm_server/model"
+	"lgo/base/gorm_server/model"
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"

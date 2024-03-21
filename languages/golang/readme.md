@@ -4,60 +4,25 @@
 
 基础篇(引用书籍或博客 待调整)
 
-- gui
-  - [gui 应用](./base/gui/reademe.md)
 
-使用篇（关于方法具体使用示例）
+- [lancet 一个全面、高效、可复用的go语言工具函数库](https://github.com/duke-git/lancet/blob/main/README_zh-CN.md)
 
-- cryptor
-  - [cryptor加密包支持数据加密和解密，获取md5，hash值。支持base64, md5, hmac, aes, des, rsa。](./lib/cryptor.md)
 
-- convertor
-  - [convertor 转换器包支持一些常见的数据类型转换](./lib/convertor.md)
+- [提供一些常用的文件系统util函数。](https://pkg.go.dev/github.com/gookit/goutil/fsutil)
 
-- file
-  - [fileutil 包支持文件基本操作。](./lib/fileutil.md)
-  - [提供一些常用的文件系统util函数。](https://pkg.go.dev/github.com/gookit/goutil/fsutil)
+- [unipdf 一个用于 Go (golang) 的 PDF 库，具有创建、阅读、处理 PDF 文件的功能。](https://github.com/unidoc/unipdf)
 
-- time
-  - [datetime 日期时间处理包，格式化日期，比较日期。](./lib/datetime.md)
+- [unioffice 一个用于创建 Office Open XML 文档（.docx、.xlsx 和 .pptx）的库。](https://github.com/unidoc/unioffice)
 
-- net
-  - [netutil 网络包支持获取 ip 地址，发送 http 请求。](./lib/netutil.md)  
+- [excelize 提供一组函数，允许您写入和读取 XLAM / XLSM / XLSX / XLTM / XLTX 文件。 支持读取和写入 Microsoft Excel™ 2007 及更高版本生成的电子表格文档。 高兼容性支持复杂组件，并提供流式API，用于从海量数据的工作表中生成或读取数据。](https://github.com/qax-os/excelize)
+ 
 
-- random
-  - [random 随机数生成器包，可以生成随机[]bytes, int, string。](./lib/random.md)
+- [GUI 应用](./base/gui/reademe.md)
 
-- func
-  - [retry 重试执行函数直到函数运行成功或被 context cancel。](./lib/retry.md)
-
-- slice
-  - [slice 包包含操作切片的方法集合。](./lib/slice.md)
-
-- string
-  - [strutil 包含处理字符串的相关函数。](./lib/strutil.md)
-
-- validator
-  - [validator 验证器包，包含常用字符串格式验证函数。](./lib/validator.md)
-
-- error
-  - [xerror 错误处理逻辑封装](./lib/xerror.md)
-
-- json
-    -
-
-- map
-    -
-
-- reflect
-    -
-
-工具篇
-
-- [bigcache 缓存](./tools/bigcache/)
-- [broadcast 广播](./tools/broadcast/)
-- [nsq 消息队列](./tools/nsq/)
-- [gorm 基础使用](./tools/gorm_server/)
+- [bigcache 缓存](./base/bigcache/)
+- [broadcast 广播](./base/broadcast/)
+- [nsq 消息队列](./base/nsq/)
+- [gorm 基础使用](./base/gorm_server/)
 
 问题篇
 
