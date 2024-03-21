@@ -15,9 +15,12 @@
 - [unioffice 一个用于创建 Office Open XML 文档（.docx、.xlsx 和 .pptx）的库。](https://github.com/unidoc/unioffice)
 
 - [excelize 提供一组函数，允许您写入和读取 XLAM / XLSM / XLSX / XLTM / XLTX 文件。 支持读取和写入 Microsoft Excel™ 2007 及更高版本生成的电子表格文档。 高兼容性支持复杂组件，并提供流式API，用于从海量数据的工作表中生成或读取数据。](https://github.com/qax-os/excelize)
- 
 
-- [GUI 应用](./base/gui/reademe.md)
+- [elastic](https://github.com/olivere/elastic)
+
+- [logrus 一个可插拔的、结构化的日志框架](https://github.com/sirupsen/logrus)
+
+- [GUI 应用 (fyne & xcgui)](./base/gui/reademe.md)
 
 - [bigcache 缓存](./base/bigcache/)
 - [broadcast 广播](./base/broadcast/)

@@ -74,3 +74,8 @@
 
 
 <img width="639" alt="image" src="https://user-images.githubusercontent.com/82997695/210159573-21bec2da-adb1-45b3-8c94-675b565a3e9f.png">
+
+
+-   RBAC（Role-Based AccessControl，基于角色的访问控制），就是用户通过角色与权限进行关联。简单地说，一个用户拥有若干角色，每一个角色拥有若干权限。这样，就构造成“用户-角色-权限”的授权模型。
+
+    -   <img src="../../../asserts/rbac.png">
