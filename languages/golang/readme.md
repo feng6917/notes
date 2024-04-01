@@ -26,6 +26,7 @@
 - [broadcast 广播](./base/broadcast/)
 - [nsq 消息队列](./base/nsq/)
 - [gorm 基础使用](./base/gorm_server/)
+- [前后端接口规范 参考](https://github.com/olivewind/restful-api-specification)
 
 问题篇
 
