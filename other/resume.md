@@ -16,12 +16,12 @@
 
 - 熟悉 项目开发、测试、部署、上线、维护整体流程, 熟悉Git、Docker、Jenkins、K8s、Helm、Rancher 使用
 - 掌握 Golang 及熟悉部分底层原理实现, 熟悉GC, GMP调度, Context, Channel等模块
-- 了解 Python, 有使用Python 解析MySQL binlog日志、操作ElasticSearch数据、处理Excel经验
-- 熟悉 Golang 常见的微服务框架及开源组件, 如 Kratos、 Gin、Gorm、Logrous、Excelize 等
-- 熟悉 MySQL 表设计、优化, 熟悉Redis、 MongoDB、 TIDB
+- 了解 Python, 有使用Python 解析MySQL BinLog日志、操作ElasticSearch数据、处理Excel经验
+- 熟悉 Golang 常见的微服务框架及开源组件, 如 Kratos、 Gin、Gorm、unidoc、Logrous、Excelize 等
+- 熟悉 MySQL 表设计、优化, 熟悉 PG、Redis、MongoDB、TIDB 使用
 - 熟悉 云存储及本地存储, 熟悉S3 及 短信服务 接入使用
-- 熟悉 序列图绘画、接口文档编写及相关组件使用, 如Draw、Swagger、Postman、ApiFox、 Xmind
-- 熟悉 Office Online、Elastic Search 安装部署,熟悉 Photoshop 使用
+- 熟悉 序列图绘画、接口文档编写及相关组件使用, 如Draw、Swagger、Postman、ApiFox、XMind
+- 熟悉 Office Online、Elastic Search 安装部署,熟悉 PhotoShop 使用
 
 ## <img src="../assets/个人信息.png" width="30px"> 个人信息
 
@@ -32,6 +32,11 @@
 - 大专, 黄河水利技术学院，2014.9~2017.7
 
 ## <img src="../assets/工作经验.png" width="30px">  工作经验
+
+- 智慧视通（杭州）科技有限公司(2023.3～至今) Golang高级开发工程师
+  - 负责蜂鸟及追形项目的开发维护，和现场技术支持密切配合，及时定位解决问题
+  - 参与蜂鸟3.0版本重构，负责摘要检索&布控&回溯离线 数据库设计，xxx
+  - xxx
 
 - 亮风台（上海）信息科技有限公司(2021.11～2023.1) Golang高级开发工程师
   - 负责工地可视化项目的开发维护和迭代，和产品经理密切配合，从需求出发，在原有权限基础上进行定制权限改造。
@@ -56,7 +61,7 @@
 
 - 智慧视通(杭州)有限公司
 
-* * 蜂鸟服务重构升级
+- * 蜂鸟服务重构升级
     - 项目背景: xxx
 
 - 亮风台（上海）信息科技有限公司
