@@ -12,7 +12,8 @@
 
 - [模块示例](https://github.com/fyne-io/examples)
 
-- [本地示例](../../test/pdfWatermark/Reamde.md)
+- [本地示例]
+  - [PDF 添加水印](../../test/pdfWatermark/Reamde.md)
 
 ### xcgui
 
