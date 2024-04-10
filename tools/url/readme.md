@@ -1,5 +1,9 @@
 ### 目录
 
+```
+目前先这样，后续会调整未扩展程序更新该文件
+```
+
 - 搜索
   - [猫狸盘搜](https://www.alipansou.com/search)
   - [逗比拯救世界 表情包搜索](https://www.dbbqb.com/)
@@ -18,8 +22,7 @@
   - [nginx 中文文档](https://blog.redis.com.cn/doc/)
   - [Nginx开发从入门到精通](https://tengine.taobao.org/book/)
   - [tidb 手册](https://book.tidb.io/)
-  - 
-
+  -
 
 - VPN
   - [v2rayshare](https://v2rayshare.com/)
@@ -57,7 +60,5 @@
   - [msdn 镜像](https://msdn.itellyou.cn/)  
   - [清华大学开源镜像站](https://mirrors.tuna.tsinghua.edu.cn/)
   - [linux 官方镜像下载](https://linux.org/pages/download/)
-  
-  - []()
 
 [笔记目录](../../README.md)
