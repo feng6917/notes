@@ -19,108 +19,108 @@
 - 示例
   - 数组传参
 
- ```
-  // Array 数组传参 值传递 函数内修改无效
-  func (c *Repo) Array(nums [1]int) {
-   nums[0] = c.Value
-  }
- ```
+	```
+	// Array 数组传参 值传递 函数内修改无效
+	func (c *Repo) Array(nums [1]int) {
+	nums[0] = c.Value
+	}
+	```
 
 - 切片传参
 
- ```
-  // Slice slice传参 引用传递 函数内修改有效
-  func (c *Repo) Slice(nums []int) {
-   nums[0] = c.Value
-  }
- ```
+	```
+	// Slice slice传参 引用传递 函数内修改有效
+	func (c *Repo) Slice(nums []int) {
+	nums[0] = c.Value
+	}
+	```
 
 - 数组指针传参
 
- ```
-  // ArrayPointer 数组传参 指针传递 函数内修改有效
-  func (c *Repo) ArrayPointer(nums *[1]int) {
-   nums[0] = c.Value
-  }
- ```
+	```
+	// ArrayPointer 数组传参 指针传递 函数内修改有效
+	func (c *Repo) ArrayPointer(nums *[1]int) {
+	nums[0] = c.Value
+	}
+	```
 
 - 数组比较
 
- ```
-  // 1. 比较长度 不一致返回 2. 比较是否为空 不一致返回 3. 比较下标值 不一致返回
-  func Uint64SliceEqualBCE(a, b []uint64) bool {
-   if len(a) != len(b) {
-    return false
-   }
+	```
+	// 1. 比较长度 不一致返回 2. 比较是否为空 不一致返回 3. 比较下标值 不一致返回
+	func Uint64SliceEqualBCE(a, b []uint64) bool {
+	if len(a) != len(b) {
+		return false
+	}
 
-   if (a == nil) != (b == nil) {
-    return false
-   }
+	if (a == nil) != (b == nil) {
+		return false
+	}
 
-   b = b[:len(a)]
-   for i, v := range a {
-    if v != b[i] {
-     return false
-    }
-   }
-   return true
-  }
- ```
+	b = b[:len(a)]
+	for i, v := range a {
+		if v != b[i] {
+		return false
+		}
+	}
+	return true
+	}
+	```
 
 - 数组去重
 
- ```
-  // 利用map去重 1. 初始化map 2. 遍历元素 已存在继续, 不存在 加入map 并添加进新的列表 
-  func RemoveDuplicationMap(arr []uint64) []uint64 {
-   set := make(map[uint64]struct{}, len(arr))
-   j := 0
-   for _, v := range arr {
-    _, ok := set[v]
-    if ok {
-     continue
-    }
-    set[v] = struct{}{}
-    arr[j] = v
-    j++
-   }
-   arr = arr[:j]
-   return arr
-  }
- ```
+	```
+	// 利用map去重 1. 初始化map 2. 遍历元素 已存在继续, 不存在 加入map 并添加进新的列表 
+	func RemoveDuplicationMap(arr []uint64) []uint64 {
+	set := make(map[uint64]struct{}, len(arr))
+	j := 0
+	for _, v := range arr {
+		_, ok := set[v]
+		if ok {
+		continue
+		}
+		set[v] = struct{}{}
+		arr[j] = v
+		j++
+	}
+	arr = arr[:j]
+	return arr
+	}
+	```
 
 - 数组转字符串
 
- ```
-  func uint2string(elems []uint64, joinStr string) string {
-   var res []string
-   switch len(elems) {
-   case 0:
-    return ""
-   default:
-    for i := range elems {
-     res = append(res, strconv.FormatUint(elems[i], 10))
-    }
-   }
-   return joinStr + strings.Join(res, joinStr)
-  }
- ```
+	```
+	func uint2string(elems []uint64, joinStr string) string {
+	var res []string
+	switch len(elems) {
+	case 0:
+		return ""
+	default:
+		for i := range elems {
+		res = append(res, strconv.FormatUint(elems[i], 10))
+		}
+	}
+	return joinStr + strings.Join(res, joinStr)
+	}
+	```
 
 - 列表、字符串反转
 
-```
-  // 1. 判断是否有元素 没有返回 2. 初始化默认值，反转开始和结束位置下标值 3. 大于中位数 停止 
-  func reverse(v []interface{}) []interface{} {
-   if len(v) <= 0 {
-    return v
-   }
-   count := len(v)
-   for i, j := 0, count-1; i < count/2; i++ {
-    j--
-    v[i], v[j] = v[j], v[i]
-   }
-   return v
-  }
- ```
+	```
+	// 1. 判断是否有元素 没有返回 2. 初始化默认值，反转开始和结束位置下标值 3. 大于中位数 停止 
+	func reverse(v []interface{}) []interface{} {
+	if len(v) <= 0 {
+		return v
+	}
+	count := len(v)
+	for i, j := 0, count-1; i < count/2; i++ {
+		j--
+		v[i], v[j] = v[j], v[i]
+	}
+	return v
+	}
+	```
 
 ##### 值类型与引用类型
 
