@@ -4,8 +4,8 @@
 基础知识 待调整
 ```
 
-- [数组、切片、字符串](./array-slice-string/readme.md)
-- []()
+- [数组、切片和字符串](./array-slice-string/readme.md)
+- [函数、方法和接口](./function-method-interface/readme.md)
 - []()
 - []()
 - []()

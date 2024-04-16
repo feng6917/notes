@@ -5,8 +5,8 @@ go 1.20
 require (
 	fyne.io/fyne/v2 v2.4.4
 	github.com/BurntSushi/toml v1.3.2
+	github.com/PuerkitoBio/goquery v1.5.1
 	github.com/adrg/sysfont v0.1.2
-	github.com/allegro/bigcache v1.2.1
 	github.com/duke-git/lancet/v2 v2.3.0
 	github.com/dustin/go-broadcast v0.0.0-20211018055107-71439988bd91
 	github.com/flopp/go-findfont v0.1.0
@@ -36,6 +36,7 @@ require (
 	fyne.io/systray v1.10.1-0.20231115130155-104f5ef7839e // indirect
 	github.com/adrg/strutil v0.2.2 // indirect
 	github.com/adrg/xdg v0.3.0 // indirect
+	github.com/andybalholm/cascadia v1.1.0 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/fredbi/uri v1.0.0 // indirect
 	github.com/fsnotify/fsnotify v1.6.0 // indirect

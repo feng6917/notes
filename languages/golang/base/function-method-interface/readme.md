@@ -48,39 +48,125 @@
 #### 函数
 
 - 具名函数 Add()
+
+  ```
+    func Add(a, b int) int {
+      return a + b
+    }
+  ```
+
 - 匿名函数
+
   ```
     var Add = func(a, b int) int {
-  	return a + b
-  }
-  fmt.Println(Add(1, 2))
+     return a + b
+    }
+    fmt.Println(Add(1, 2))
   ```
+
 - 多个参数和多个返回值 Swap()
+
+  ```
+    func Swap(a, b int) (int, int) {
+      return b, a
+    }
+  ```
+
 - 可变数量的参数 Sum()
+
+  ```
+    // more 对应 []int 切片类型
+    func Sum(a int, more ...int) int {
+      for _, v := range more {
+        a += v
+      }
+      return a
+    }
+  ```
+
 - 给函数的返回值命名 Find()
+
+  ```
+    func Find(m map[int]int, key int) (value int, ok bool) {
+      value, ok = m[key]
+      return
+    }
+  ```
+
 - 闭包的引用方式访问外部变量的行为可能会导致一些隐含的问题 A1() A2()
+
+  ```
+      func A1() {
+        for i := 0; i < 3; i++ {
+          i := i // 定义一个循环体内局部变量i
+          defer func() {
+            println(i)
+          }()
+
+        }
+      }
+
+      func A2() {
+        for i := 0; i < 3; i++ { // 通过函数传入i
+          // defer 语句会马上对调用参数求值
+          defer func(i int) {
+            println(i)
+          }(i)
+
+        }
+      }
+  ```
+
 -
 
 #### 方法
 
 ```
-将第一个函数参数移动到函数前面，从代码角度看虽然只是一 个小的改动，但是从编程哲学角度来看，Go语言已经是进入 面向对象语言的行列了。
+方法是由函数演变而来，只是将函数的第一个对象参数移动到了函数名前面了而已。将第一个函数参数移动到函数前面，从代码角度看虽然只是一 个小的改动，但是从编程哲学角度来看，Go语言已经是进入 面向对象语言的行列了。
 对于给定的类型，每 个方法的名字必须是唯一的，同时方法和函数一样也不支持重载。
+
+// 参数初始化
+type repo struct {
+ optionFirst string
+}
+
+// options options
+type options func(*repo)
+
+func NewRepo(opts ...options) *repo {
+ srv := &repo{}
+ for _, o := range opts {
+  o(srv)
+ }
+ return srv
+}
+
+func withOptionFirst(t string) options {
+ return func(c *repo) {
+  c.optionFirst = t
+ }
+}
 ```
 
 #### 接口
 
 ```
-    通过接口类型实现 了对鸭子类型的支持，使得安全动态的编程变得相对容易。
-	Go语言中接口类型的独特之处在 于它是满足隐式实现的鸭子类型。
-	鸭子类型说的是:只要走起路来像鸭子、叫起来也像鸭子，那么就可以把它当作鸭 子。
-	Go语言中的面向对象就是如此，如果一个对象只要看起 来像是某种接口类型的实现，那么它就可以作为该接口类型使 用。
-	这种设计可以让你创建一个新的接口类型满足已经存在的 具体类型却不用去破坏这些类型原有的定义；
+  Go的接口类型是对其它类型行为的抽象和概括；
+  通过接口类型实现 了对鸭子类型的支持，使得安全动态的编程变得相对容易。
+  Go语言中接口类型的独特之处在 于它是满足隐式实现的鸭子类型。
+  鸭子类型说的是:只要走起路来像鸭子、叫起来也像鸭子，那么就可以把它当作鸭 子。
+  Go语言中的面向对象就是如此，如果一个对象只要看起 来像是某种接口类型的实现，那么它就可以作为该接口类型使 用。
+  这种设计可以让你创建一个新的接口类型满足已经存在的 具体类型却不用去破坏这些类型原有的定义；
 ```
 
 ```
-    // UpperString()
-	// 在protobuf中， Message 接口也采用了类似的方法，也定义了 一个特有的 ProtoMessage ，用于避免其它类型无意中适配了该接口(嵌套方式重用)
+    type UpperString string
+
+    func (s UpperString) String() string {
+      return strings.ToUpper(string(s))
+    }
+    有时候对象和接口之间太灵活了，导致我们需要人为地限制这种无意之间的适配。常见的做法是定义一个含特殊方法来区分接口。比如 runtime 包中的 Error 接口就定义了一个特有的
+    RuntimeError 方法，用于避免其它类型无意中适配了该接口, 在protobuf中， Message 接口也采用了类似的方法，也定义了 一个特有的 ProtoMessage ，用于避免其它类型无意中适配了该接口(嵌套方式重用)
 ```
 
 [Golang 目录](../../readme.md)
