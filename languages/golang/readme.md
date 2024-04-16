@@ -42,7 +42,7 @@
 测试篇
 
 - [PDF 加水印](./test/pdfWatermark/Reamde.md)
-- []()
+- [百度贴吧 签到](../../other/bash/baidustick.md)
 - []()
 - []()
 
