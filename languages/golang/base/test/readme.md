@@ -23,7 +23,10 @@
 - 并行基准测试 BenchmarkSumParallel
 - 示例函数 ExampleSum
 
+- [自測示例](./self_test/server_test.go)
+
 - 参考链接：
   - [Go 语言基础之单元测试](https://www.liwenzhou.com/posts/Go/unit-test/)
-
-[Golang 目录](../../readme.md)
+  - [Go单测从零到溜系列0—单元测试基础](https://www.liwenzhou.com/posts/Go/unit-test-0/)
+  
+[base 目录](../readme.md)

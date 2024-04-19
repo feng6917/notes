@@ -2,6 +2,11 @@
 
 ##### 待调整 尽量做到 简单，详细
 
+注意点
+
+- [api](./tips/api.md)
+- [db](./tips/db.md)
+
 基础篇(引用书籍或博客 待调整)
 
 - [base 基础知识](./base/readme.md)
@@ -43,7 +48,7 @@
 
 - [PDF 加水印](./test/pdfWatermark/Reamde.md)
 - [百度贴吧 签到](../../other/bash/baidustick.md)
-- []()
+- [dongdong](./test/dongdong/readme.md)
 - []()
 
 [笔记目录](../../README.md)

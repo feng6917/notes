@@ -25,8 +25,10 @@
   - [Redis 设计与实现](https://drive.google.com/file/d/1ZUSueUEZ6YxfY391320B0HmXsq6vzqG1/view?usp=share_link)
   - [nginx 中文文档](https://www.nginx.cn/doc/)
   - [nginx 开发从入门到精通-淘宝核心组编写](http://tengine.taobao.org/book/)
-- 程序
 
+- 程序
+  - [算法图解](https://drive.google.com/file/d/1z5nYj2hqyJFB3fDlaPHHh8bWKiGhTFmI/view?usp=drive_link)
+    - [笔记](./%E7%AE%97%E6%B3%95%E5%9B%BE%E8%A7%A3%E7%AC%94%E8%AE%B0.md)
   - [程序员的职业素养](https://drive.google.com/file/d/1L4TTFnzsYidNuWaFAuVULnDwehHJxY4t/view?usp=share_link)
   - [程序员修炼之道](https://drive.google.com/file/d/1UtbbX2m4tLVLiP-6I9QAlE7X68mhraXm/view?usp=share_link)
   - [代码整洁之道](https://drive.google.com/file/d/1azuG5Ddo-2X0KHi_kCwkYitrYKGVKUpc/view?usp=share_link)
@@ -34,10 +36,10 @@
   - [高效程序员的 45 个习惯](https://drive.google.com/file/d/1hSIeggu8AaOtya_vtMrm8Y_gpQB36c9O/view?usp=share_link)
   - [重构-改善既有代码的设计](https://drive.google.com/file/d/1Np3lTT0yeX0k47UQmFsjILs_6IZMxeWF/view?usp=share_link)
   - [人月神话](https://drive.google.com/file/d/1XwVRcPbRu1DmeLmBhIkHBbJgk8Bwk--q/view?usp=share_link)
- 
+
 - 系统
-  -  Linux 7.6 <a href ="https://www.bilibili.com/video/BV16Q4y1y7xS"><img src="../asserts/video_play.png"  height="30" width="30" align="bottom">
-   - Kubernetes (K8S) 3 小时快速上手 + 实践 <a href ="https://www.bilibili.com/video/BV1Tg411P7EB"><img src="../asserts/video_play.png"  height="30" width="30" align="bottom">
+  - Linux 7.6 <a href ="https://www.bilibili.com/video/BV16Q4y1y7xS"><img src="../asserts/video_play.png"  height="30" width="30" align="bottom">
+  - Kubernetes (K8S) 3 小时快速上手 + 实践 <a href ="https://www.bilibili.com/video/BV1Tg411P7EB"><img src="../asserts/video_play.png"  height="30" width="30" align="bottom">
 
 - 其他
 
