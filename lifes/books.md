@@ -30,6 +30,7 @@
   - [算法图解](https://drive.google.com/file/d/1z5nYj2hqyJFB3fDlaPHHh8bWKiGhTFmI/view?usp=drive_link)
     - [笔记](./%E7%AE%97%E6%B3%95%E5%9B%BE%E8%A7%A3%E7%AC%94%E8%AE%B0.md)
   - [程序员的职业素养](https://drive.google.com/file/d/1L4TTFnzsYidNuWaFAuVULnDwehHJxY4t/view?usp=share_link)
+    - [笔记](./%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%81%8C%E4%B8%9A%E7%B4%A0%E5%85%BB%E7%AC%94%E8%AE%B0.md)
   - [程序员修炼之道](https://drive.google.com/file/d/1UtbbX2m4tLVLiP-6I9QAlE7X68mhraXm/view?usp=share_link)
   - [代码整洁之道](https://drive.google.com/file/d/1azuG5Ddo-2X0KHi_kCwkYitrYKGVKUpc/view?usp=share_link)
   - [Elasticsearch 大数据搜索引擎](https://drive.google.com/file/d/1idPzKsM5XqZf2pdZXB6RzadECS6o_5I4/view?usp=share_link)
