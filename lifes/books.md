@@ -17,6 +17,7 @@
 
 - 数据库
   - [MySQL 必知必会](https://drive.google.com/file/d/1BSZKOE8bBz1CNdoThuq8n047Fxl8hmgV/view?usp=share_link)
+    - [笔记](./MySQL%20%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A.md)
   - [PostgreSQL 数据库内核分析](https://drive.google.com/file/d/1cerWe56v6I_NZkAehNeDcBEM_A2_2WC8/view?usp=share_link)
   - [PostgreSQL 查询引擎源码探析](https://drive.google.com/file/d/1FYY-lQ-wpXUveheFwcVwDSiRo4RjGMea/view?usp=share_link)
   - [PostgreSQL 服务器编程](https://drive.google.com/file/d/1MX6c25JUVQk6_YYGj6oWQxWNZzl4DfLC/view?usp=share_link)
