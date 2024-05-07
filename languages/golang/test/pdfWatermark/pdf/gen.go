@@ -29,7 +29,7 @@ func (self *Pdf) InitImage(watermarkFilePath string, sliderThumbnail float64) er
 		return err
 	}
 	resBuf := bytes.NewBuffer([]byte{})
-	
+
 	_, _, err = imageutil.Scale(bytes.NewReader(imageBuf), resBuf, sliderThumbnail, 100)
 	if err != nil {
 		return err

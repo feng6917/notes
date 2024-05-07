@@ -2,6 +2,8 @@ package pdf
 
 import (
 	"bytes"
+	"crypto/md5"
+	"encoding/hex"
 	"fmt"
 	"image/jpeg"
 	"lgo/test/unipdf/common"
@@ -11,34 +13,69 @@ import (
 	"lgo/test/unipdf/extractor"
 	"lgo/test/unipdf/model"
 	"os"
+	"sync"
 )
+
+var imageCache *sync.Map
 
 func TestMain() {
 	inputPath := "test.pdf"
-	//测试获取文字
-	text, err := GetPdfTextContent(inputPath, 1)
+	// 获取pdf页码
+	pdfReader, f, err := model.NewPdfReaderFromFile(inputPath, nil)
 	if err != nil {
 		return
 	}
-	fmt.Println(text)
+	defer f.Close()
 
-	//测试获取图片
-	imageContent, err := GetPdfImageContent(inputPath, 1)
+	//测试获取文字
+	text, err := GetPdfTextContent(pdfReader, 2)
 	if err != nil {
 		return
 	}
-	if len(imageContent) > 0 {
-		// testWriteFile(imageContent[0])
+	if text != "" {
+		fmt.Println("==================== text")
+		fmt.Println(text)
+		// page, err := pdfReader.GetPage(2)
+		// if err != nil {
+		// 	return
+		// }
+		// textXobjects(page)
 	}
+
+	// //测试获取图片
+	// imageContent, err := GetPdfImageContent(inputPath, 1)
+	// if err != nil {
+	// 	return
+	// }
+	// if len(imageContent) > 0 {
+	// 	testWriteFile(imageContent[0], 1)
+	// }
+}
+
+func testImage(pdfReader *model.PdfReader) {
+	pageCount, err := pdfReader.GetNumPages()
+	if err != nil {
+		return
+	}
+	imageCache = &sync.Map{}
+	for i := 0; i < pageCount; i++ {
+		summaryImageCount(pdfReader, i+1)
+	}
+	c1 := creator.New()
+	// c1.AddPage(page)
+	for i := 0; i < pageCount; i++ {
+		// fmt.Println(i)
+		tmp, err := newImage(pdfReader, i+1)
+		if err == nil {
+			// fmt.Println(i)
+			c1.AddPage(tmp)
+		}
+	}
+	c1.WriteToFile("123.pdf")
 }
 
 // GetPdfTextContent 获取pdf文字内容,起始页pageNum = 1
-func GetPdfTextContent(inputPath string, pageNum int) (string, error) {
-	pdfReader, f, err := model.NewPdfReaderFromFile(inputPath, nil)
-	if err != nil {
-		return "", err
-	}
-	defer f.Close()
+func GetPdfTextContent(pdfReader *model.PdfReader, pageNum int) (string, error) {
 
 	page, err := pdfReader.GetPage(pageNum)
 	//导出文本
@@ -138,10 +175,15 @@ func cleanUnusedXobjects(page *model.PdfPage) {
 		if operand == "Do" {
 			params := op.Params
 			imageName := params[0].String()
-			fmt.Println(imageName)
-			if imageName != "Img1" {
-
+			val, valExist := imageCache.Load(imageName)
+			if !valExist {
 				usedObjectsNames = append(usedObjectsNames, imageName)
+			} else {
+				valInt := val.(int)
+				// TODO: 待处理
+				if valInt < 10 {
+					usedObjectsNames = append(usedObjectsNames, imageName)
+				}
 			}
 		}
 	}
@@ -176,4 +218,94 @@ func exists(element string, elements []string) bool {
 		}
 	}
 	return false
+}
+
+func summaryImageCount(pdfReader *model.PdfReader, pageNum int) error {
+	page, err := pdfReader.GetPage(pageNum)
+	if err != nil {
+		return err
+	}
+	summaryXobjects(page)
+	return nil
+}
+
+func Md5String(s string) string {
+	h := md5.New()
+	h.Write([]byte(s))
+	return hex.EncodeToString(h.Sum(nil))
+}
+
+func newImage(pdfReader *model.PdfReader, pageNum int) (*model.PdfPage, error) {
+	page, err := pdfReader.GetPage(pageNum)
+	if err != nil {
+		return nil, err
+	}
+	cleanUnusedXobjects(page)
+
+	return page, nil
+}
+
+func summaryXobjects(page *model.PdfPage) {
+	contents, err := page.GetAllContentStreams()
+	if err != nil {
+		common.Log.Debug("failed to get page content stream")
+	}
+	parser := contentstream.NewContentStreamParser(contents)
+	operations, err := parser.Parse()
+	if err != nil {
+		common.Log.Debug("failed to parse content stream")
+	}
+	for _, op := range *operations {
+		operand := op.Operand
+		// Check for `Do` (Draw XObject) operator.
+		if operand == "Do" {
+			params := op.Params
+			key := params[0].String()
+			cacheVal, cacheExist := imageCache.Load(key)
+			if cacheExist {
+				valInt := cacheVal.(int)
+				imageCache.Store(key, valInt+1)
+			} else {
+				imageCache.Store(key, 1)
+			}
+		}
+	}
+}
+
+func textXobjects(page *model.PdfPage) {
+	contents, err := page.GetAllContentStreams()
+	if err != nil {
+		common.Log.Debug("failed to get page content stream")
+	}
+	parser := contentstream.NewContentStreamParser(contents)
+	operations, err := parser.Parse()
+	if err != nil {
+		common.Log.Debug("failed to parse content stream")
+	}
+	usedObjectsNames := []string{}
+	for _, op := range *operations {
+		fmt.Println("params: ", op.Params)
+		fmt.Println("Operand: ", op.Operand)
+		// operand := op.Operand
+		// Check for `Do` (Draw XObject) operator.
+		// if operand == "Do" {
+		// 	params := op.Params
+		// 	imageName := params[0].String()
+		// 	fmt.Println("imageName: ",imageName)
+		// }
+	}
+
+	xObject := page.Resources.XObject
+	dict, ok := xObject.(*core.PdfObjectDictionary)
+	if ok {
+		keys := getKeys(dict)
+		for _, k := range keys {
+			if exists(k, usedObjectsNames) {
+				continue
+			}
+			name := *core.MakeName(k)
+			dict.Remove(name)
+		}
+	}
+
 }
