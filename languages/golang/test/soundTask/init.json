@@ -1,0 +1,49 @@
+{
+    "task": [
+        {
+            "name": "喝水时间到了",
+            "filename": "G:\\KuGou\\听起来好吃吗？ - 喝水的声音 (铃声).mp3",
+            "time": "10:00"
+        },
+        {
+            "name": "课间休息时间到了",
+            "filename": "G:\\KuGou\\Tears - 下课 (语音提示).mp3",
+            "time": "10:30"
+        },
+        {
+            "name": "喝水时间到了",
+            "filename": "G:\\KuGou\\听起来好吃吗？ - 喝水的声音 (铃声).mp3",
+            "time": "11:02"
+        },
+        {
+            "name": "预备吃饭时间到了",
+            "filename": "G:\\KuGou\\李袈 - 吃饭了.mp3",
+            "time": "11:30"
+        },
+        {
+            "name": "午休时间到了",
+            "filename": "G:\\KuGou\\纯音乐 - 下雨声轻雷声.mp3",
+            "time": "12:40"
+        },
+        {
+            "name": "洗脸清醒时间到了",
+            "filename": "G:\\KuGou\\Tich K - Bug Bug.mp3",
+            "time": "13:30"
+        },
+        {
+            "name": "下午茶时间到了",
+            "filename": "G:\\KuGou\\Marcela Mangabeira - Lovin' You.mp3",
+            "time": "15:00"
+        },
+        {
+            "name": "喝水时间到了",
+            "filename": "G:\\KuGou\\听起来好吃吗？ - 喝水的声音 (铃声).mp3",
+            "time": "16:00"
+        },
+        {
+            "name": "预备下班时间到了",
+            "filename": "G:\\KuGou\\伍佰 - 我要下班 (Live).mp3",
+            "time": "17:30"
+        }
+    ]
+}

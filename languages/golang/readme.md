@@ -49,6 +49,6 @@
 - [PDF 加水印](./test/pdfWatermark/Reamde.md)
 - [百度贴吧 签到](../../other/bash/baidustick.md)
 - [dongdong](./test/dongdong/readme.md)
-- []()
+- [音频提醒任务](./test/soundTask/readme.md)
 
 [笔记目录](../../README.md)
