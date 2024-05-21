@@ -47,8 +47,9 @@
 测试篇
 
 - [PDF 加水印](./test/pdfWatermark/Reamde.md)
-- [百度贴吧 签到](../../other/bash/baidustick.md)
 - [dongdong](./test/dongdong/readme.md)
 - [音频提醒任务](./test/soundTask/readme.md)
+- [定时推送微信消息](./test/wxTask/readme.md)
+- [百度贴吧一键签到](./test/baidustick/readme.md)
 
 [笔记目录](../../README.md)

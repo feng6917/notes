@@ -4,11 +4,11 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"lgo/test/soundTask/task"
 	"os"
 	"strconv"
 	"strings"
 	"time"
-	"lgo/test/soundTask/task"
 
 	"github.com/sirupsen/logrus"
 	"github.com/twgh/xcgui/app"
@@ -48,6 +48,21 @@ type Info struct {
 
 func main() {
 	ta.Init()
+
+	fileBuf, err := os.ReadFile("./init.json")
+	if err != nil {
+		fmt.Println("读取配置文件失败,err: ", err)
+		panic("--------------------------")
+	}
+
+	var cf struct {
+		Task []Info
+	}
+	err = json.Unmarshal(fileBuf, &cf)
+	if err != nil {
+		fmt.Println("解析配置文件失败,err: ", err)
+		panic("--------------------------")
+	}
 
 	go func() {
 		tk := time.NewTicker(time.Second * 3)
@@ -153,20 +168,7 @@ func main() {
 	btn_clear = widget.NewButton(int32(startX), 35, 55, 30, "清空任务", w.Handle)
 	btn_clear.Event_BnClick1(onBnClick)
 
-	fileBuf, err := os.ReadFile("./init.json")
-	if err != nil {
-		fmt.Println("读取配置文件失败,err: ", err)
-		panic("--------------------------")
-	}
-
-	var cf struct {
-		Task []Info
-	}
-	err = json.Unmarshal(fileBuf, &cf)
-	if err != nil {
-		fmt.Println("解析配置文件失败,err: ", err)
-		panic("--------------------------")
-	}
+	
 	listAddItem(cf.Task)
 	w.Show(true)
 	a.Run()

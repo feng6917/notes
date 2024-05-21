@@ -9,6 +9,7 @@ require (
 	github.com/adrg/sysfont v0.1.2
 	github.com/duke-git/lancet/v2 v2.3.0
 	github.com/dustin/go-broadcast v0.0.0-20211018055107-71439988bd91
+	github.com/eatmoreapple/openwechat v1.4.6
 	github.com/faiface/beep v1.1.0
 	github.com/flopp/go-findfont v0.1.0
 	github.com/go-sql-driver/mysql v1.5.0

@@ -83,6 +83,8 @@ github.com/duke-git/lancet/v2 v2.3.0 h1:Ztie0qOnC4QgGYYqmpmQxbxkPcm54kqFXj1bwhiV
 github.com/duke-git/lancet/v2 v2.3.0/go.mod h1:zGa2R4xswg6EG9I6WnyubDbFO/+A/RROxIbXcwryTsc=
 github.com/dustin/go-broadcast v0.0.0-20211018055107-71439988bd91 h1:jAUM3D1KIrJmwx60DKB+a/qqM69yHnu6otDGVa2t0vs=
 github.com/dustin/go-broadcast v0.0.0-20211018055107-71439988bd91/go.mod h1:8rK6Kbo1Jd6sK22b24aPVgAm3jlNy1q1ft+lBALdIqA=
+github.com/eatmoreapple/openwechat v1.4.6 h1:m/Run2wN9zptKnoS8R3edLNWLlZOOgk13Bq8Y61zSTU=
+github.com/eatmoreapple/openwechat v1.4.6/go.mod h1:h4m2N8m0XsUKlm7UR8BUGkV89GNuKHCnlGV3J8n9Mpw=
 github.com/envoyproxy/go-control-plane v0.9.0/go.mod h1:YTl/9mNaCwkRvm6d1a2C3ymFceY/DCBVvsKhRF0iEA4=
 github.com/envoyproxy/go-control-plane v0.9.1-0.20191026205805-5f8ba28d4473/go.mod h1:YTl/9mNaCwkRvm6d1a2C3ymFceY/DCBVvsKhRF0iEA4=
 github.com/envoyproxy/go-control-plane v0.9.4/go.mod h1:6rpuAdCZL397s3pYoYcLgu1mIlRU8Am5FuJP05cCM98=
