@@ -17,6 +17,7 @@ require (
 	github.com/gorilla/mux v1.8.0
 	github.com/jinzhu/gorm v1.9.16
 	github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646
+	github.com/robotn/gohook v0.41.0
 	github.com/secsy/goftp v0.0.0-20200609142545-aa2de14babf4
 	github.com/sirupsen/logrus v1.8.1
 	github.com/stretchr/testify v1.8.4
@@ -68,6 +69,7 @@ require (
 	github.com/srwiley/oksvg v0.0.0-20221011165216-be6e8873101c // indirect
 	github.com/srwiley/rasterx v0.0.0-20220730225603-2ab79fcdd4ef // indirect
 	github.com/tevino/abool v1.2.0 // indirect
+	github.com/vcaesar/keycode v0.10.1 // indirect
 	github.com/xuri/efp v0.0.0-20220603152613-6918739fd470 // indirect
 	github.com/xuri/nfp v0.0.0-20220409054826-5e722a1d9e22 // indirect
 	github.com/yuin/goldmark v1.5.5 // indirect

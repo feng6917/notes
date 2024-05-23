@@ -51,5 +51,6 @@
 - [音频提醒任务](./test/soundTask/readme.md)
 - [定时推送微信消息](./test/wxTask/readme.md)
 - [百度贴吧一键签到](./test/baidustick/readme.md)
+- [键盘音效](./test/keystore/readme.md)
 
 [笔记目录](../../README.md)

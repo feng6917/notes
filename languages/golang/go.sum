@@ -311,6 +311,8 @@ github.com/richardlehane/mscfb v1.0.4/go.mod h1:YzVpcZg9czvAuhk9T+a3avCpcFPMUWm7
 github.com/richardlehane/msoleps v1.0.1/go.mod h1:BWev5JBpU9Ko2WAgmZEuiz4/u3ZYTKbjLycmwiWUfWg=
 github.com/richardlehane/msoleps v1.0.3 h1:aznSZzrwYRl3rLKRT3gUk9am7T/mLNSnJINvN0AQoVM=
 github.com/richardlehane/msoleps v1.0.3/go.mod h1:BWev5JBpU9Ko2WAgmZEuiz4/u3ZYTKbjLycmwiWUfWg=
+github.com/robotn/gohook v0.41.0 h1:h1vK3w/UQpq0YkIiGnxm9Awv85W54esL0/NUYGueggo=
+github.com/robotn/gohook v0.41.0/go.mod h1:FedpuAkVqzM5t67L5fcf3hSSCUDO9cM5YkWCw1U+nuc=
 github.com/rogpeppe/fastuuid v1.2.0/go.mod h1:jVj6XXZzXRy/MSR5jhDC/2q6DgLz+nrA6LYCDYWNEvQ=
 github.com/rogpeppe/go-internal v1.3.0/go.mod h1:M8bDsm7K2OlrFYOpmOWEs/qY81heoFRclV5y23lUDJ4=
 github.com/russross/blackfriday/v2 v2.0.1/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=
@@ -365,6 +367,9 @@ github.com/unidoc/unichart v0.2.0 h1:Ce92lgJBITOWcMRkA5HHd0K/8QP/jydCJU8xxUMH2Vw
 github.com/unidoc/unichart v0.2.0/go.mod h1:9sJXeqxIIsU2D07tmhpDMoND0mBFRGfKBJnXZMsJnzk=
 github.com/unidoc/unitype v0.4.0 h1:/TMZ3wgwfWWX64mU5x2O9no9UmoBqYCB089LYYqHyQQ=
 github.com/unidoc/unitype v0.4.0/go.mod h1:HV5zuUeqMKA4QgYQq3KDlJY/P96XF90BQB+6czK6LVA=
+github.com/vcaesar/keycode v0.10.1 h1:0DesGmMAPWpYTCYddOFiCMKCDKgNnwiQa2QXindVUHw=
+github.com/vcaesar/keycode v0.10.1/go.mod h1:JNlY7xbKsh+LAGfY2j4M3znVrGEm5W1R8s/Uv6BJcfQ=
+github.com/vcaesar/tt v0.20.0 h1:9t2Ycb9RNHcP0WgQgIaRKJBB+FrRdejuaL6uWIHuoBA=
 github.com/xuri/efp v0.0.0-20220603152613-6918739fd470 h1:6932x8ltq1w4utjmfMPVj09jdMlkY0aiA6+Skbtl3/c=
 github.com/xuri/efp v0.0.0-20220603152613-6918739fd470/go.mod h1:ybY/Jr0T0GTCnYjKqmdwxyxn2BQf2RcQIIvex5QldPI=
 github.com/xuri/excelize/v2 v2.7.1 h1:gm8q0UCAyaTt3MEF5wWMjVdmthm2EHAWesGSKS9tdVI=
