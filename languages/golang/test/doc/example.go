@@ -1,9 +1,11 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	"time"
 	"unicode/utf8"
+	"unsafe"
 
 	"github.com/sirupsen/logrus"
 )
@@ -13,7 +15,7 @@ func main() {
 	// testVar()
 	// test range
 	// testRange()
-	testRangeSlice()
+	// testRangeSlice()
 	// 测试数组
 	// testArrayEdit()
 	// // 测试切片
@@ -41,6 +43,145 @@ func main() {
 
 	// // test defer exec
 	// testDeferExec()
+
+	// 测试make 与 new 初始化map区别
+	// testMakeNew()
+
+	// 单引号包括的是rune类型 双引号包括的是字符串类型
+	// 汉字占三个字节
+	// testStrCopy()
+
+	// testStructEditVale()
+	// 多路复用 超时处理
+	// testSelect()
+
+	//
+	// testContextDead()
+	// testContextTimeOut()
+	testCtxWithValue()
+}
+
+var neverChan = make(chan struct{})
+
+func testContextDead() {
+	ctx, cancel := context.WithDeadline(context.Background(), time.Now().Add(time.Second))
+	defer cancel()
+
+	select {
+	case <-neverChan:
+		fmt.Println("receive msg from neverChan")
+	case <-ctx.Done():
+		fmt.Println("ctx done. ", "ctx err: ", ctx.Err())
+	}
+}
+
+func testContextTimeOut() {
+	ctx, cancel := context.WithTimeout(context.Background(), time.Second*5)
+	defer cancel()
+	select {
+	case <-neverChan:
+		fmt.Println("receive msg from neverChan")
+	case msg := <-ctx.Done():
+		fmt.Println("msg: ", msg)
+		fmt.Println("ctx err: ", ctx.Err())
+	}
+}
+
+func testCtxWithValue() {
+	ctx := context.Background()
+	nctx := context.WithValue(ctx, "name", "zhangsan")
+
+	f := func(key string) {
+		valI := nctx.Value(key)
+		if valI == nil {
+			return
+		}
+		valTmp, ok := valI.(string)
+		fmt.Println(valTmp, ok)
+	}
+
+	f("name")
+}
+
+func testSelect() {
+	// 多路复用
+	ts1()
+	// 超时处理
+	ts2()
+}
+
+func ts2() {
+	ch := make(chan int)
+	select {
+	case msg := <-ch:
+		fmt.Println(msg)
+	case msg := <-time.After(time.Second):
+		fmt.Println("time: ", msg)
+	}
+}
+
+func ts1() {
+	ch := make(chan int)
+	go func() {
+		ch <- 0
+	}()
+
+	go func() {
+		ch <- 1
+	}()
+
+	select {
+	case msg := <-ch:
+		fmt.Println("msg: ", msg)
+	case msg1 := <-ch:
+		fmt.Println("msg1: ", msg1)
+	}
+}
+
+type TS struct {
+	Name string
+}
+
+func testStructEditVale() {
+	ts := TS{Name: "aaa"}
+	fmt.Printf("addr: %p\r\n", &ts)
+	ts.Name = "bbb"
+	ts.Name = "safdasfsfsadfffasfdsafafsfd"
+	fmt.Printf("addr: %p\r\n", &ts)
+
+}
+
+func testStrCopy() {
+	s1 := "aaaaa"
+	sb1 := []byte(s1)
+	s1n := string(sb1)
+	fmt.Printf("s1:%#v sb1:%#v s1n:%#v\r\n", &s1, &sb1, &s1n)
+
+	s2 := "bbbbbb"
+	sr2 := []rune(s2)
+	s2n := string(sr2)
+	fmt.Printf("s2: %#v sr2:%#v s2n:%#v\r\n", &s2, &sr2, &s2n)
+
+	s3 := 'a'
+	fmt.Println(s3)
+	fmt.Println(unsafe.Sizeof(s3))
+
+	s4 := "ha哈哈"
+	s4r := []rune(s4)
+	s4b := []byte(s4)
+	fmt.Println("rune: ", s4r)
+	fmt.Println("byre: ", s4b)
+}
+
+func testMakeNew() {
+	n := *new(map[string]int)
+	n = map[string]int{}
+	n["1"] = 1
+	fmt.Println("n: ", n)
+
+	m := make(map[string]int)
+	m["1"] = 1
+	fmt.Println("m: ", m)
 }
 
 func testDeferExec() {
@@ -117,10 +258,6 @@ func testForValErr() {
 		// }(v)
 	}
 	time.Sleep(time.Second)
-}
-
-type TS struct {
-	Name string
 }
 
 func (c *TS) EditName(name string) {

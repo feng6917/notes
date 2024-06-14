@@ -13,6 +13,7 @@
   - 10. 变量内存分析，堆，栈是什么，逃逸分析是什么？
   - 11. 零切片, nil切片和空切片是否一样？
   - 12. 字符串转成byte数组，会发生内存拷贝么？
+    - <https://blog.csdn.net/lsoxvxe/article/details/132427676>
   - 13. 拷贝大切片与小切片代价是否一致？
   - 14. map 是否可以不进行初始化，初始化长度区别？承载多大，iterator 是否安全，能不能一边del一边range?线程安全的map怎么实现
     - <https://juejin.cn/post/7215587423685378085>
@@ -25,7 +26,14 @@
   - 19. go map如何顺序读取？
     - <https://segmentfault.com/a/1190000043834586>
   - 20. go中怎么实现set
-  - 21. Golang 有没有 this 指针？
+  - 21. Golang 有没有 this 指针？指针是什么？
+    - <https://blog.csdn.net/fly910905/article/details/105989267>
   - 22. Golang 中的引用类型包含哪些?
     - <https://blog.csdn.net/luduoyuan/article/details/135396996>
-  - 23.
+  - 23. string, byte, rune ? 利用unsafe.Pointer和reflect包可以实现很多禁忌的黑魔法，但这些操作对GC并不友好。最好不要尝试。
+    - [黑魔法](./23.md)
+  - 24. for select时，如果通道已经关闭会怎么样？如果只有一个case呢？
+    - <https://mp.weixin.qq.com/s/TuuLYgvIkwREDLkALqTMXA>
+  - 25. select可以用于什么？
+    - <https://learnku.com/articles/82805>
+  - 26. context 的用途？
