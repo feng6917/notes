@@ -11,6 +11,7 @@
   - 8. for 中大聪明（go func()、append()、defer file close()）
   - 9. defer 后面跟的是什么？有什么特点？
   - 10. 变量内存分析，堆，栈是什么，逃逸分析是什么？
+    - 逃逸分析 <https://geektutu.com/post/hpg-escape-analysis.html>
   - 11. 零切片, nil切片和空切片是否一样？
   - 12. 字符串转成byte数组，会发生内存拷贝么？
     - <https://blog.csdn.net/lsoxvxe/article/details/132427676>
