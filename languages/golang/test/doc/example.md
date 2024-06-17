@@ -50,4 +50,11 @@
     - <https://developer.baidu.com/article/detail.html?id=3229046>
   - 31. sync.Map 优缺点，使用场景
     - <https://blog.csdn.net/lsoxvxe/article/details/132427824>
-  - 35.
+  - 35. go 主协程等待子协程执行完毕再执行方法几种方式
+    - <https://blog.csdn.net/dqz_nihao/article/details/124904807>
+  - 36. go chan 有缓冲和无缓冲的区别
+    - <https://www.runoob.com/note/43083>
+  - 37. 携程间的通信方式
+    - <https://blog.csdn.net/qq_17199495/article/details/125787317> toTest
+  - 38. go 中chan的底层原理
+    - <https://blog.csdn.net/qq_58244272/article/details/136895661> eg      
