@@ -41,4 +41,13 @@
     - <https://segmentfault.com/a/1190000040917752>
   - 27. 怎样避免内存逃逸？
     - <https://developer.baidu.com/article/detail.html?id=3316082>
-  - 28.   
+  - 28. goroutine 泄露的概念及常见原因？(至少说出四种)
+    - <https://blog.csdn.net/Ws_Te47/article/details/135521647>
+  - 29. 内存泄漏的场景及解决方案？（至少说出四种）
+    - <https://blog.csdn.net/Ws_Te47/article/details/135521647>
+    - [io pprof图](./leak/io/pprof.png)
+  - 30. sync.Pool的适用场景
+    - <https://developer.baidu.com/article/detail.html?id=3229046>
+  - 31. sync.Map 优缺点，使用场景
+    - <https://blog.csdn.net/lsoxvxe/article/details/132427824>
+  - 35.
