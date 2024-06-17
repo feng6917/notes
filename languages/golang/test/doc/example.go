@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
+	"sync"
 	"time"
 	"unicode/utf8"
 	"unsafe"
@@ -59,6 +60,13 @@ func main() {
 	// testContextDead()
 	// testContextTimeOut()
 	testCtxWithValue()
+
+	testSyncMap()
+}
+
+func testSyncMap(){
+	s := sync.Map{}
+	s.Store("1", "2")
 }
 
 var neverChan = make(chan struct{})

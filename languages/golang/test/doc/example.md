@@ -38,3 +38,16 @@
   - 25. select可以用于什么？
     - <https://learnku.com/articles/82805>
   - 26. context 的用途？
+
+-------------------------
+
+- 30. goroutine 泄露的概念及常见原因？(至少说出四种)
+  - <https://blog.csdn.net/Ws_Te47/article/details/135521647>
+- 31. 内存泄漏的场景及解决方案？（至少说出四种）
+  - <https://blog.csdn.net/Ws_Te47/article/details/135521647>
+  - [io pprof图](./leak/io/pprof.png)
+- 33. sync.Pool的适用场景
+  - <https://developer.baidu.com/article/detail.html?id=3229046>
+- 34. sync.Map 优缺点，使用场景
+  - <https://blog.csdn.net/lsoxvxe/article/details/132427824>
+- 35.
