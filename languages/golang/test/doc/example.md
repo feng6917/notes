@@ -33,8 +33,12 @@
     - <https://blog.csdn.net/luduoyuan/article/details/135396996>
   - 23. string, byte, rune ? 利用unsafe.Pointer和reflect包可以实现很多禁忌的黑魔法，但这些操作对GC并不友好。最好不要尝试。
     - [黑魔法](./23.md)
-  - 24. for select时，如果通道已经关闭会怎么样？如果只有一个case呢？
+  - 24. for select时，如果通道已经关闭会怎么样，如果有一个case, 一个defualt? 如果只有一个case呢？
     - <https://mp.weixin.qq.com/s/TuuLYgvIkwREDLkALqTMXA>
   - 25. select可以用于什么？
     - <https://learnku.com/articles/82805>
   - 26. context 的用途？
+    - <https://segmentfault.com/a/1190000040917752>
+  - 27. 怎样避免内存逃逸？
+    - <https://developer.baidu.com/article/detail.html?id=3316082>
+  - 28.   
