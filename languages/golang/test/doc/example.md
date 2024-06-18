@@ -57,4 +57,8 @@
   - 37. 携程间的通信方式
     - <https://blog.csdn.net/qq_17199495/article/details/125787317> toTest
   - 38. go 中chan的底层原理
-    - <https://blog.csdn.net/qq_58244272/article/details/136895661> eg      
+    - <https://blog.csdn.net/qq_58244272/article/details/136895661> eg
+
+  - 39. 读写锁底层是怎么实现的？
+    - <https://www.cnblogs.com/peteremperor/p/14097633.html>
+    - video <https://www.bilibili.com/video/BV1rg411B71e/?spm_id_from=pageDriver&vd_source=7d32ad5a1a541e44326e50415ffd9907>
