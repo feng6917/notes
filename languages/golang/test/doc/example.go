@@ -59,14 +59,201 @@ func main() {
 	//
 	// testContextDead()
 	// testContextTimeOut()
-	testCtxWithValue()
+	// testCtxWithValue()
+	// testChan()
+	// testRwMtx()
 
-	testSyncMap()
+	testReverseStr()
+
 }
 
-func testSyncMap(){
-	s := sync.Map{}
-	s.Store("1", "2")
+func testReverseStr() {
+	s := "aaa1123测试sf"
+	var ns string
+	for i := range []rune(s) {
+		tmp := string([]rune(s)[len([]rune(s))-i-1])
+		fmt.Println(tmp)
+		ns += tmp
+	}
+	fmt.Println(ns)
+}
+
+func testChan() {
+	ch := make(chan int, 2)
+	ch <- 1
+	ch <- 2
+	close(ch)
+
+	for v := range ch {
+		fmt.Println(v)
+	}
+
+	// select {
+	// case msg := <-ch:
+	// 	fmt.Println(msg)
+	// default:
+	// 	fmt.Println("default")
+	// }
+
+	// select {}
+}
+
+func testRwMtx() {
+
+	/*
+
+		w           Mutex        // held if there are pending writers //
+		writerSem   uint32       // semaphore for writers to wait for completing readers // 等待完成写 排队的信号量
+		readerSem   uint32       // semaphore for readers to wait for completing writers // 等待完成读 排队的信号量
+		readerCount atomic.Int32 // number of pending readers // 读锁的计数器 2 30 次方 最大数量
+		readerWait  atomic.Int32 // number of departing readers // 等待读锁释放数量 逐渐递减为0
+	*/
+	rw := sync.RWMutex{}
+
+	go func() {
+		// read
+		rw.RLock()
+		t1, t2, t3, t4 := rw.GetInfo()
+		fmt.Println("read 1 0: ", t1, t2, t3, t4)
+		fmt.Println("read 1 0")
+		time.Sleep(time.Second)
+		fmt.Println("read 1 1")
+		time.Sleep(time.Second)
+		fmt.Println("read 1 2")
+		t1, t2, t3, t4 = rw.GetInfo()
+		fmt.Println("read 1: ", t1, t2, t3, t4)
+		rw.RUnlock()
+
+	}()
+	time.Sleep(time.Second)
+	go func() {
+		rw.RLock()
+		fmt.Println("read 2 0")
+		t1, t2, t3, t4 := rw.GetInfo()
+		fmt.Println("read 2 0: ", t1, t2, t3, t4)
+		time.Sleep(time.Second)
+		fmt.Println("read 2 1")
+		time.Sleep(time.Second)
+		fmt.Println("read 2 2")
+		t1, t2, t3, t4 = rw.GetInfo()
+		fmt.Println("read 2 2: ", t1, t2, t3, t4)
+		rw.RUnlock()
+	}()
+	time.Sleep(time.Millisecond)
+	go func() {
+		rw.RLock()
+		t1, t2, t3, t4 := rw.GetInfo()
+		fmt.Println("read 3 0: ", t1, t2, t3, t4)
+		fmt.Println("read 3 0")
+		time.Sleep(time.Second)
+		fmt.Println("read 3 1")
+		time.Sleep(time.Second)
+		fmt.Println("read 3 2")
+		t1, t2, t3, t4 = rw.GetInfo()
+		fmt.Println("read 3 2: ", t1, t2, t3, t4)
+		rw.RUnlock()
+	}()
+	go func() {
+		rw.Lock()
+		t1, t2, t3, t4 := rw.GetInfo()
+		fmt.Println("write 1 0: ", t1, t2, t3, t4)
+		fmt.Println("write 1 0")
+		time.Sleep(time.Second)
+		fmt.Println("write 1 1")
+		time.Sleep(time.Second)
+		fmt.Println("write 1 2")
+		t1, t2, t3, t4 = rw.GetInfo()
+		fmt.Println("write 1 2: ", t1, t2, t3, t4)
+		rw.Unlock()
+	}()
+	time.Sleep(time.Second * 3)
+	go func() {
+		rw.Lock()
+		t1, t2, t3, t4 := rw.GetInfo()
+		fmt.Println("write 2 0: ", t1, t2, t3, t4)
+		fmt.Println("write 2 0")
+		time.Sleep(time.Second)
+		fmt.Println("write 2 1")
+		time.Sleep(time.Second)
+		fmt.Println("write 2 2")
+		t1, t2, t3, t4 = rw.GetInfo()
+		fmt.Println("write 2 2: ", t1, t2, t3, t4)
+		rw.Unlock()
+	}()
+	time.Sleep(time.Second)
+	go func() {
+		rw.RLock()
+		t1, t2, t3, t4 := rw.GetInfo()
+		fmt.Println("read 4 0: ", t1, t2, t3, t4)
+		fmt.Println("read 4 0")
+		time.Sleep(time.Second)
+		fmt.Println("read 4 1")
+		time.Sleep(time.Second)
+		fmt.Println("read 4 2")
+		t1, t2, t3, t4 = rw.GetInfo()
+		fmt.Println("read 4 2: ", t1, t2, t3, t4)
+		rw.RUnlock()
+	}()
+	time.Sleep(time.Millisecond)
+	go func() {
+		rw.RLock()
+		t1, t2, t3, t4 := rw.GetInfo()
+		fmt.Println("read 5 0: ", t1, t2, t3, t4)
+		fmt.Println("read 5 0")
+		time.Sleep(time.Second)
+		fmt.Println("read 5 1")
+		time.Sleep(time.Second)
+		fmt.Println("read 5 2")
+		t1, t2, t3, t4 = rw.GetInfo()
+		fmt.Println("read 5 2: ", t1, t2, t3, t4)
+		rw.RUnlock()
+	}()
+	go func() {
+		rw.RLock()
+		t1, t2, t3, t4 := rw.GetInfo()
+		fmt.Println("read 6 0: ", t1, t2, t3, t4)
+		fmt.Println("read 6 0")
+		fmt.Println("read 6 1")
+		fmt.Println("read 6 2")
+		t1, t2, t3, t4 = rw.GetInfo()
+		fmt.Println("read 6 2: ", t1, t2, t3, t4)
+		rw.RUnlock()
+	}()
+	go func() {
+		rw.RLock()
+		t1, t2, t3, t4 := rw.GetInfo()
+		fmt.Println("w 0: ", t1, t2, t3, t4)
+		fmt.Println("w 0")
+		fmt.Println("w 1")
+		fmt.Println("w 2")
+		t1, t2, t3, t4 = rw.GetInfo()
+		fmt.Println("w 2: ", t1, t2, t3, t4)
+		rw.RUnlock()
+	}()
+	go func() {
+		rw.RLock()
+		t1, t2, t3, t4 := rw.GetInfo()
+		fmt.Println("w1 0: ", t1, t2, t3, t4)
+		fmt.Println("w1 0")
+		fmt.Println("w1 1")
+		fmt.Println("w1 2")
+		t1, t2, t3, t4 = rw.GetInfo()
+		fmt.Println("w1 2: ", t1, t2, t3, t4)
+		rw.RUnlock()
+	}()
+	go func() {
+		rw.RLock()
+		t1, t2, t3, t4 := rw.GetInfo()
+		fmt.Println("w2 0: ", t1, t2, t3, t4)
+		fmt.Println("w2 0")
+		fmt.Println("w2 1")
+		fmt.Println("w2 2")
+		t1, t2, t3, t4 = rw.GetInfo()
+		fmt.Println("w2 2: ", t1, t2, t3, t4)
+		rw.RUnlock()
+	}()
+
+	select {}
 }
 
 var neverChan = make(chan struct{})

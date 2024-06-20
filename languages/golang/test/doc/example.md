@@ -62,3 +62,5 @@
   - 39. 读写锁底层是怎么实现的？
     - <https://www.cnblogs.com/peteremperor/p/14097633.html>
     - video <https://www.bilibili.com/video/BV1rg411B71e/?spm_id_from=pageDriver&vd_source=7d32ad5a1a541e44326e50415ffd9907>
+  - 40. golang的CSP思想?
+    - <https://www.jianshu.com/p/36e246c6153d>  
