@@ -18,13 +18,13 @@
 ```
     订阅链接：
 
-    v2ray、小火箭:
-    https://drive.google.com/uc?export=download&id=1WAOUmwrgJWgsy2Q2gcnNIGquor9G8pf1
-    直接复制都V2rayn软件中即可，不需要点击！！！（直接点击显示屏蔽）
+v2ray、小火箭:
+https://drive.google.com/uc?export=download&id=1io-PnO8p6670OYsLT7ZW9wXBPSzLXZJP
+直接复制都V2rayn软件中即可，不需要点击！！！（直接点击显示屏蔽）
 
-    clash ：
-    https://raw.githubusercontent.com/ZYFXS/ZYFXS001/main/008
-    直接复制都V2rayn软件中即可，不需要点击！！！ 
+clash ：
+https://raw.githubusercontent.com/ZYFXS/ZYFXS001/main/101
+直接复制都V2rayn软件中即可，不需要点击！！！
 
 ```
 

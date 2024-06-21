@@ -1,0 +1,43 @@
+★★★请先保证自己能正常科学上网后，再执行此订阅链接进行节点订阅★★★
+★★★请先保证自己能正常科学上网后，再执行此订阅链接进行节点订阅★★★
+★★★请先保证自己能正常科学上网后，再执行此订阅链接进行节点订阅★★★
+
+Clash meta内核订阅链接，普通Clash不支持导入使用！
+https://paste.gg/p/anonymous/eb7779146d4d4b6784ee7f952fbc8749/files/afeb544451094f9eb1dae090ba4663dd/raw
+【Clash想要使用请详细看下方的重点】
+1、windows支持导入使用的Clash meta客户端教程：https://youtu.be/nMVO9fjP8RY?si=vI0cnzxFR4RGiZU1
+PS：windows系统使用视频中Clash verge客户端，根据视频演示切换为Clash meta内核即可导入使用！
+Clash verge原作者仓库地址：https://github.com/MetaCubeX/ClashMetaForAndroid/releases
+Clash verge新作者仓库地址：https://github.com/clash-verge-rev/clash-verge-rev/releases
+2、安卓使用Clash meta客户端，客户端作者Github开源仓库地址：https://github.com/MetaCubeX/ClashMetaForAndroid/releases
+PS：下载第一个文件名为：cmfa-2.10.0-meta-arm64-v8a-release.apk 如手机不兼容，可下载第二个文件名为：cmfa-2.10.0-meta-armeabi-v7a-release.apk 一般新款的安卓系统都是可以兼容第一个Clash meta APP使用的！
+3、Mac OS Clash verge客户端
+Intel 芯片：https://github.com/zzzgydi/clash-verge/releases/download/v1.3.8/Clash.Verge_1.3.8_x64.dmg
+M芯片：https://github.com/zzzgydi/clash-verge/releases/download/v1.3.8/Clash.Verge_1.3.8_aarch64.dmg
+【附言】：教程写的很清楚了，但是我发现还是有很多网友觉得自己什么都会什么都知道，用不成了就会喊节点都失效了，节点都不能用！我搞不懂这些人是不是都是盲人！
+
+★★★请先保证自己能正常科学上网后，再执行此订阅链接进行节点订阅★★★
+★★★请先保证自己能正常科学上网后，再执行此订阅链接进行节点订阅★★★
+★★★请先保证自己能正常科学上网后，再执行此订阅链接进行节点订阅★★★
+请先开启科学上网，保证自己已经能正常访问外网后，再使用次订阅链接进行订阅！如果导入失败请使用我给大家准备Clash配置文件导入。
+
+如订阅失败请去github更新自己的客户端
+
+Clash安卓端下载：https://github.com/Kr328/ClashForAndroid/releases
+
+windows端下载：https://github.com/Fndroid/clash_for_windows_pkg/releases
+
+V2rayN下载地址：
+https://github.com/2dust/v2rayN/releases
+
+xray官方：https://github.com/XTLS
+
+V2rayNG下载地址：
+https://github.com/2dust/v2rayNG/releases
+
+winXray下载地址：
+https://github.com/TheMRLL/WinXray/releases/tag/V4.3
+
+
+如果不会下载或使用，请看梦歌这期视频
+视频网址：https://www.youtube.com/watch?v=dFzD94CkQ3s
