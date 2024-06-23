@@ -3,7 +3,6 @@ package main
 import (
 	"context"
 	"fmt"
-	"sync"
 	"time"
 	"unicode/utf8"
 	"unsafe"
@@ -63,8 +62,40 @@ func main() {
 	// testChan()
 	// testRwMtx()
 
-	testReverseStr()
+	// testReverseStr()
 
+	testPerson()
+
+}
+
+type Person interface {
+	GetAge()
+}
+
+type Student struct {
+	Name string
+	Age  int
+}
+
+func (c *Student) GetAge() {
+	fmt.Println("Student Age: ", c.Age)
+}
+
+type Techer struct {
+	Hobby string
+	Age   int
+}
+
+func (c *Techer) GetAge() {
+	fmt.Println("Techer Age: ", c.Age)
+}
+
+func testPerson() {
+	p := Person(&Student{"wangYi", 18})
+	p.GetAge()
+
+	t := Person(&Techer{"play", 24})
+	t.GetAge()
 }
 
 func testReverseStr() {
@@ -108,150 +139,150 @@ func testRwMtx() {
 		readerCount atomic.Int32 // number of pending readers // 读锁的计数器 2 30 次方 最大数量
 		readerWait  atomic.Int32 // number of departing readers // 等待读锁释放数量 逐渐递减为0
 	*/
-	rw := sync.RWMutex{}
+	// rw := sync.RWMutex{}
 
-	go func() {
-		// read
-		rw.RLock()
-		t1, t2, t3, t4 := rw.GetInfo()
-		fmt.Println("read 1 0: ", t1, t2, t3, t4)
-		fmt.Println("read 1 0")
-		time.Sleep(time.Second)
-		fmt.Println("read 1 1")
-		time.Sleep(time.Second)
-		fmt.Println("read 1 2")
-		t1, t2, t3, t4 = rw.GetInfo()
-		fmt.Println("read 1: ", t1, t2, t3, t4)
-		rw.RUnlock()
+	// go func() {
+	// 	// read
+	// 	rw.RLock()
+	// 	t1, t2, t3, t4 := rw.GetInfo()
+	// 	fmt.Println("read 1 0: ", t1, t2, t3, t4)
+	// 	fmt.Println("read 1 0")
+	// 	time.Sleep(time.Second)
+	// 	fmt.Println("read 1 1")
+	// 	time.Sleep(time.Second)
+	// 	fmt.Println("read 1 2")
+	// 	t1, t2, t3, t4 = rw.GetInfo()
+	// 	fmt.Println("read 1: ", t1, t2, t3, t4)
+	// 	rw.RUnlock()
 
-	}()
-	time.Sleep(time.Second)
-	go func() {
-		rw.RLock()
-		fmt.Println("read 2 0")
-		t1, t2, t3, t4 := rw.GetInfo()
-		fmt.Println("read 2 0: ", t1, t2, t3, t4)
-		time.Sleep(time.Second)
-		fmt.Println("read 2 1")
-		time.Sleep(time.Second)
-		fmt.Println("read 2 2")
-		t1, t2, t3, t4 = rw.GetInfo()
-		fmt.Println("read 2 2: ", t1, t2, t3, t4)
-		rw.RUnlock()
-	}()
-	time.Sleep(time.Millisecond)
-	go func() {
-		rw.RLock()
-		t1, t2, t3, t4 := rw.GetInfo()
-		fmt.Println("read 3 0: ", t1, t2, t3, t4)
-		fmt.Println("read 3 0")
-		time.Sleep(time.Second)
-		fmt.Println("read 3 1")
-		time.Sleep(time.Second)
-		fmt.Println("read 3 2")
-		t1, t2, t3, t4 = rw.GetInfo()
-		fmt.Println("read 3 2: ", t1, t2, t3, t4)
-		rw.RUnlock()
-	}()
-	go func() {
-		rw.Lock()
-		t1, t2, t3, t4 := rw.GetInfo()
-		fmt.Println("write 1 0: ", t1, t2, t3, t4)
-		fmt.Println("write 1 0")
-		time.Sleep(time.Second)
-		fmt.Println("write 1 1")
-		time.Sleep(time.Second)
-		fmt.Println("write 1 2")
-		t1, t2, t3, t4 = rw.GetInfo()
-		fmt.Println("write 1 2: ", t1, t2, t3, t4)
-		rw.Unlock()
-	}()
-	time.Sleep(time.Second * 3)
-	go func() {
-		rw.Lock()
-		t1, t2, t3, t4 := rw.GetInfo()
-		fmt.Println("write 2 0: ", t1, t2, t3, t4)
-		fmt.Println("write 2 0")
-		time.Sleep(time.Second)
-		fmt.Println("write 2 1")
-		time.Sleep(time.Second)
-		fmt.Println("write 2 2")
-		t1, t2, t3, t4 = rw.GetInfo()
-		fmt.Println("write 2 2: ", t1, t2, t3, t4)
-		rw.Unlock()
-	}()
-	time.Sleep(time.Second)
-	go func() {
-		rw.RLock()
-		t1, t2, t3, t4 := rw.GetInfo()
-		fmt.Println("read 4 0: ", t1, t2, t3, t4)
-		fmt.Println("read 4 0")
-		time.Sleep(time.Second)
-		fmt.Println("read 4 1")
-		time.Sleep(time.Second)
-		fmt.Println("read 4 2")
-		t1, t2, t3, t4 = rw.GetInfo()
-		fmt.Println("read 4 2: ", t1, t2, t3, t4)
-		rw.RUnlock()
-	}()
-	time.Sleep(time.Millisecond)
-	go func() {
-		rw.RLock()
-		t1, t2, t3, t4 := rw.GetInfo()
-		fmt.Println("read 5 0: ", t1, t2, t3, t4)
-		fmt.Println("read 5 0")
-		time.Sleep(time.Second)
-		fmt.Println("read 5 1")
-		time.Sleep(time.Second)
-		fmt.Println("read 5 2")
-		t1, t2, t3, t4 = rw.GetInfo()
-		fmt.Println("read 5 2: ", t1, t2, t3, t4)
-		rw.RUnlock()
-	}()
-	go func() {
-		rw.RLock()
-		t1, t2, t3, t4 := rw.GetInfo()
-		fmt.Println("read 6 0: ", t1, t2, t3, t4)
-		fmt.Println("read 6 0")
-		fmt.Println("read 6 1")
-		fmt.Println("read 6 2")
-		t1, t2, t3, t4 = rw.GetInfo()
-		fmt.Println("read 6 2: ", t1, t2, t3, t4)
-		rw.RUnlock()
-	}()
-	go func() {
-		rw.RLock()
-		t1, t2, t3, t4 := rw.GetInfo()
-		fmt.Println("w 0: ", t1, t2, t3, t4)
-		fmt.Println("w 0")
-		fmt.Println("w 1")
-		fmt.Println("w 2")
-		t1, t2, t3, t4 = rw.GetInfo()
-		fmt.Println("w 2: ", t1, t2, t3, t4)
-		rw.RUnlock()
-	}()
-	go func() {
-		rw.RLock()
-		t1, t2, t3, t4 := rw.GetInfo()
-		fmt.Println("w1 0: ", t1, t2, t3, t4)
-		fmt.Println("w1 0")
-		fmt.Println("w1 1")
-		fmt.Println("w1 2")
-		t1, t2, t3, t4 = rw.GetInfo()
-		fmt.Println("w1 2: ", t1, t2, t3, t4)
-		rw.RUnlock()
-	}()
-	go func() {
-		rw.RLock()
-		t1, t2, t3, t4 := rw.GetInfo()
-		fmt.Println("w2 0: ", t1, t2, t3, t4)
-		fmt.Println("w2 0")
-		fmt.Println("w2 1")
-		fmt.Println("w2 2")
-		t1, t2, t3, t4 = rw.GetInfo()
-		fmt.Println("w2 2: ", t1, t2, t3, t4)
-		rw.RUnlock()
-	}()
+	// }()
+	// time.Sleep(time.Second)
+	// go func() {
+	// 	rw.RLock()
+	// 	fmt.Println("read 2 0")
+	// 	t1, t2, t3, t4 := rw.GetInfo()
+	// 	fmt.Println("read 2 0: ", t1, t2, t3, t4)
+	// 	time.Sleep(time.Second)
+	// 	fmt.Println("read 2 1")
+	// 	time.Sleep(time.Second)
+	// 	fmt.Println("read 2 2")
+	// 	t1, t2, t3, t4 = rw.GetInfo()
+	// 	fmt.Println("read 2 2: ", t1, t2, t3, t4)
+	// 	rw.RUnlock()
+	// }()
+	// time.Sleep(time.Millisecond)
+	// go func() {
+	// 	rw.RLock()
+	// 	t1, t2, t3, t4 := rw.GetInfo()
+	// 	fmt.Println("read 3 0: ", t1, t2, t3, t4)
+	// 	fmt.Println("read 3 0")
+	// 	time.Sleep(time.Second)
+	// 	fmt.Println("read 3 1")
+	// 	time.Sleep(time.Second)
+	// 	fmt.Println("read 3 2")
+	// 	t1, t2, t3, t4 = rw.GetInfo()
+	// 	fmt.Println("read 3 2: ", t1, t2, t3, t4)
+	// 	rw.RUnlock()
+	// }()
+	// go func() {
+	// 	rw.Lock()
+	// 	t1, t2, t3, t4 := rw.GetInfo()
+	// 	fmt.Println("write 1 0: ", t1, t2, t3, t4)
+	// 	fmt.Println("write 1 0")
+	// 	time.Sleep(time.Second)
+	// 	fmt.Println("write 1 1")
+	// 	time.Sleep(time.Second)
+	// 	fmt.Println("write 1 2")
+	// 	t1, t2, t3, t4 = rw.GetInfo()
+	// 	fmt.Println("write 1 2: ", t1, t2, t3, t4)
+	// 	rw.Unlock()
+	// }()
+	// time.Sleep(time.Second * 3)
+	// go func() {
+	// 	rw.Lock()
+	// 	t1, t2, t3, t4 := rw.GetInfo()
+	// 	fmt.Println("write 2 0: ", t1, t2, t3, t4)
+	// 	fmt.Println("write 2 0")
+	// 	time.Sleep(time.Second)
+	// 	fmt.Println("write 2 1")
+	// 	time.Sleep(time.Second)
+	// 	fmt.Println("write 2 2")
+	// 	t1, t2, t3, t4 = rw.GetInfo()
+	// 	fmt.Println("write 2 2: ", t1, t2, t3, t4)
+	// 	rw.Unlock()
+	// }()
+	// time.Sleep(time.Second)
+	// go func() {
+	// 	rw.RLock()
+	// 	t1, t2, t3, t4 := rw.GetInfo()
+	// 	fmt.Println("read 4 0: ", t1, t2, t3, t4)
+	// 	fmt.Println("read 4 0")
+	// 	time.Sleep(time.Second)
+	// 	fmt.Println("read 4 1")
+	// 	time.Sleep(time.Second)
+	// 	fmt.Println("read 4 2")
+	// 	t1, t2, t3, t4 = rw.GetInfo()
+	// 	fmt.Println("read 4 2: ", t1, t2, t3, t4)
+	// 	rw.RUnlock()
+	// }()
+	// time.Sleep(time.Millisecond)
+	// go func() {
+	// 	rw.RLock()
+	// 	t1, t2, t3, t4 := rw.GetInfo()
+	// 	fmt.Println("read 5 0: ", t1, t2, t3, t4)
+	// 	fmt.Println("read 5 0")
+	// 	time.Sleep(time.Second)
+	// 	fmt.Println("read 5 1")
+	// 	time.Sleep(time.Second)
+	// 	fmt.Println("read 5 2")
+	// 	t1, t2, t3, t4 = rw.GetInfo()
+	// 	fmt.Println("read 5 2: ", t1, t2, t3, t4)
+	// 	rw.RUnlock()
+	// }()
+	// go func() {
+	// 	rw.RLock()
+	// 	t1, t2, t3, t4 := rw.GetInfo()
+	// 	fmt.Println("read 6 0: ", t1, t2, t3, t4)
+	// 	fmt.Println("read 6 0")
+	// 	fmt.Println("read 6 1")
+	// 	fmt.Println("read 6 2")
+	// 	t1, t2, t3, t4 = rw.GetInfo()
+	// 	fmt.Println("read 6 2: ", t1, t2, t3, t4)
+	// 	rw.RUnlock()
+	// }()
+	// go func() {
+	// 	rw.RLock()
+	// 	t1, t2, t3, t4 := rw.GetInfo()
+	// 	fmt.Println("w 0: ", t1, t2, t3, t4)
+	// 	fmt.Println("w 0")
+	// 	fmt.Println("w 1")
+	// 	fmt.Println("w 2")
+	// 	t1, t2, t3, t4 = rw.GetInfo()
+	// 	fmt.Println("w 2: ", t1, t2, t3, t4)
+	// 	rw.RUnlock()
+	// }()
+	// go func() {
+	// 	rw.RLock()
+	// 	t1, t2, t3, t4 := rw.GetInfo()
+	// 	fmt.Println("w1 0: ", t1, t2, t3, t4)
+	// 	fmt.Println("w1 0")
+	// 	fmt.Println("w1 1")
+	// 	fmt.Println("w1 2")
+	// 	t1, t2, t3, t4 = rw.GetInfo()
+	// 	fmt.Println("w1 2: ", t1, t2, t3, t4)
+	// 	rw.RUnlock()
+	// }()
+	// go func() {
+	// 	rw.RLock()
+	// 	t1, t2, t3, t4 := rw.GetInfo()
+	// 	fmt.Println("w2 0: ", t1, t2, t3, t4)
+	// 	fmt.Println("w2 0")
+	// 	fmt.Println("w2 1")
+	// 	fmt.Println("w2 2")
+	// 	t1, t2, t3, t4 = rw.GetInfo()
+	// 	fmt.Println("w2 2: ", t1, t2, t3, t4)
+	// 	rw.RUnlock()
+	// }()
 
 	select {}
 }

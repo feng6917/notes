@@ -64,3 +64,11 @@
     - video <https://www.bilibili.com/video/BV1rg411B71e/?spm_id_from=pageDriver&vd_source=7d32ad5a1a541e44326e50415ffd9907>
   - 40. golang的CSP思想?
     - <https://www.jianshu.com/p/36e246c6153d>  
+  - 41. 能说说uintptr和unsafe.Pointer的区别么？
+  - 42. reflect(反射包)如何获取字段tag? 为什么json包不能导出私有变量的tag?
+  - 43. 进程，线程，携程？
+    <https://blog.csdn.net/EDDYCJY/article/details/116141654>
+  - 44. 垃圾回收的过程是怎么样的？什么是写屏障、混合写屏障，如何实现？(参考前记录)
+  - 45. GMP 模型
+    <https://zboya.github.io/post/go_scheduler/?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io>
+  - 46. 协程之间是怎么调度的  

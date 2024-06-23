@@ -4,6 +4,7 @@ go 1.20
 
 require (
 	fyne.io/fyne/v2 v2.4.4
+	github.com/360EntSecGroup-Skylar/excelize v1.4.1
 	github.com/BurntSushi/toml v1.3.2
 	github.com/PuerkitoBio/goquery v1.5.1
 	github.com/adrg/sysfont v0.1.2

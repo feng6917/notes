@@ -5,11 +5,11 @@
 ```
     免费节点订阅链接
 
-    v2ray/小火箭/winxray等订阅链接，不需要开代理，即可更新订阅链接
-    http://yy.yudou66.top/202406/20240620baf3se.txt
+v2ray/小火箭/winxray等订阅链接，不需要开代理，即可更新订阅链接
+http://yy.yudou66.top/202406/20240623bc8ase.txt
 
-    clash订阅链接，不需要开代理，即可更新订阅链接
-    http://yy.yudou66.top/202406/2024.6.20Clasg5h.yaml
+clash订阅链接，不需要开代理，即可更新订阅链接
+http://yy.yudou66.top/202406/2024.6.23Clash5h.yaml
 
 ```
 
