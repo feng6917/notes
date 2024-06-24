@@ -1,5 +1,12 @@
 ### 目录
 
+- 大飞分享
+
+```
+v2ray，小火箭:  https://oss.v2rayse.com/proxies/data/2024-06-23/vsP66EF.txt
+clash，小火箭:  https://oss.v2rayse.com/proxies/data/2024-06-23/JdODzkk.yaml
+```
+
 - 玉豆(来源 Youtube)
 
 ```
