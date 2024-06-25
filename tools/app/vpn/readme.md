@@ -4,9 +4,9 @@
 
 [玉豆分享](#玉豆来源-youtube)
 
-[由零开始](./1/)
+[由零开始](#由零开始来源-youtube)
 
-[分享日记](./2/)
+[分享日记](./6.25%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB.zip)
 
 [资源分享师](#资源分享师来源-youtube)
 
@@ -15,8 +15,11 @@
 ##### 大飞分享(来源 Youtube)
 
 ```
-    https://oss.v2rayse.com/proxies/data/2024-06-23/vsP66EF.txt
-    https://oss.v2rayse.com/proxies/data/2024-06-23/JdODzkk.yaml
+    v2ray，小火箭:  https://oss.v2rayse.com/proxies/data/2024-06-24/Vg8rCNH.txt
+
+    clash，小火箭:  https://oss.v2rayse.com/proxies/data/2024-06-24/XJx2PaN.yaml
+
+    sing-box订阅链接： https://oss.v2rayse.com/proxies/data/2024-06-24/Im9C6in.json
 ```
 
 [目录](#目录)
@@ -26,13 +29,25 @@
 ##### 玉豆(来源 Youtube)
 
 ```
-    免费节点订阅链接
-
 v2ray/小火箭/winxray等订阅链接，不需要开代理，即可更新订阅链接
-http://yy.yudou66.top/202406/20240623bc8ase.txt
+http://yy.yudou66.top/202406/20240624bash3e.txt
 
 clash订阅链接，不需要开代理，即可更新订阅链接
-http://yy.yudou66.top/202406/2024.6.23Clash5h.yaml
+http://yy.yudou66.top/202406/2024.6.24Clasn7h.yaml
+
+```
+
+[目录](#目录)
+
+---
+
+##### 由零开始(来源 Youtube)
+
+```
+Clash Verge/Shadowrocket/Nekobox/OpenClash订阅
+https://clv.lshan.eu.org/6-23/24/clash/由零開始-Youtube.txt
+V2rayN/V2rayNG订阅
+https://clv.lshan.eu.org/6-23/24/V2ray/由零開始-Youtube.txt
 
 ```
 
@@ -43,15 +58,13 @@ http://yy.yudou66.top/202406/2024.6.23Clash5h.yaml
 ##### 资源分享师(来源 Youtube)
 
 ```
-    订阅链接：
-
 v2ray、小火箭:
-https://drive.google.com/uc?export=download&id=1io-PnO8p6670OYsLT7ZW9wXBPSzLXZJP
+https://drive.google.com/uc?export=download&id=1nxcNYULtb_mF96XUA19tCA9J4yy733jl
 直接复制都V2rayn软件中即可，不需要点击！！！（直接点击显示屏蔽）
 
 clash ：
-https://raw.githubusercontent.com/ZYFXS/ZYFXS001/main/101
-直接复制都V2rayn软件中即可，不需要点击！！！
+https://raw.githubusercontent.com/ZYFXS/ZYFXS001/main/001
+直接复制都V2rayn软件中即可，不需要点击！！！ 
 
 ```
 
