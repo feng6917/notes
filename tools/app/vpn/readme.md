@@ -32,7 +32,7 @@
 
 ---
 
-##### 玉豆(来源 Youtube)
+<!-- ##### 玉豆(来源 Youtube)
 
 ```
 v2ray/小火箭/winxray等订阅链接，不需要开代理，即可更新订阅链接
@@ -72,7 +72,7 @@ clash ：
 https://raw.githubusercontent.com/ZYFXS/ZYFXS001/main/001
 直接复制都V2rayn软件中即可，不需要点击！！！ 
 
-```
+``` -->
 
 [目录](#目录)
 

@@ -76,4 +76,10 @@
     <https://blog.csdn.net/micl200110041/article/details/82013032>  
   - 48. 必须要手动对齐内存的情况
     <https://juejin.cn/post/7082332804922966023>  
-  - 49.   
+  - 49. 堆内存和栈内存分配方式， Go协程的栈内存管理（后续再说）
+    go 语言设计与实现
+    <https://draveness.me/golang/docs/part3-runtime/ch07-memory/golang-stack-management/>
+  - 50. go 常用的优化手段？[<-](./50.md)
+  - 51. 怎样访问私有变量？(没有意义)
+    <https://www.jianshu.com/p/7b3638b47845>
+  - 52.
