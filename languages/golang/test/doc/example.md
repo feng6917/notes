@@ -88,4 +88,10 @@
     <https://juejin.cn/post/7171288417324498980?searchId=20240626104405564347837F7AF32BAC9F>
   - 54. 为什么小对象多了会造成 gc 压力?
   - 55. 闭包怎么实现的,闭包的主要应用场景？
-  - 56.   
+  - 56. 两次 GC 周期重叠会引发什么问题， Gc的时机有哪些，能手动触发么？
+    <https://blog.csdn.net/kevin_tech/article/details/122613350>
+  - 57. Goroutinue 什么时候会被挂起？
+    <https://blog.csdn.net/asd1126163471/article/details/124893098>  
+  - 58. 
+    <https://blog.csdn.net/raoxiaoya/article/details/118437969>  
+    <https://learnku.com/articles/45279>
