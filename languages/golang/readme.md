@@ -4,8 +4,11 @@
 
 注意点
 
-- [api](./tips/api.md)
-- [db](./tips/db.md)
+- 骚年，像厉害的人学习啊
+    - [实习学生做的题我不会，唉](https://www.nowcoder.com/discuss/353157462826098688?toCommentId=8432069)
+
+- [api 啥也不是](./tips/api.md)
+- [db 啥也不是](./tips/db.md)
 
 基础篇(引用书籍或博客 待调整)
 
