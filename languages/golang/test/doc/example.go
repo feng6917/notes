@@ -64,8 +64,17 @@ func main() {
 
 	// testReverseStr()
 
-	testPerson()
+	// testPerson()
 
+	res := testReturn()
+	logrus.Info("Res: ", res)
+}
+
+func testReturn() bool {
+	a := true
+	b := false
+
+	return a || b
 }
 
 type Person interface {
