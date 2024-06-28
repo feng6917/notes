@@ -66,8 +66,29 @@ func main() {
 
 	// testPerson()
 
-	res := testReturn()
-	logrus.Info("Res: ", res)
+	// res := testReturn()
+	// logrus.Info("Res: ", res)
+
+	testPanic()
+}
+
+func testPanic() {
+	// 空指针
+	// var s *string
+	// fmt.Println(*s)
+	// 数组越界
+	// a := [3][]int{}
+	// for i := 0; i < 5; i++ {
+	// 	fmt.Println(a[i])
+	// }
+	// 除数为0
+	a, b := 0, 10
+	fmt.Println(b / a)
+	// chan 二次关闭
+	ch := make(chan int)
+	close(ch)
+	close(ch)
+
 }
 
 func testReturn() bool {
