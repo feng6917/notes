@@ -4,15 +4,20 @@
 
 ---
 
-## <img src="../assets/联系方式.png" width="30px"> 联系方式
+<!-- ## <img src="../assets/联系方式.png" width="30px"> 联系方式 -->
 
-- 手机号：175-2132-8428
-- 邮箱：<feng6917@gmail.com>
-- blog: <https://github.com/feng6917/blog>
 
-## <img src="../assets/技能清单.png" width="30px"> 技能清单
+<!-- - blog: <https://github.com/feng6917/blog> -->
 
-- 熟悉 项目开发、测试、部署、上线、维护整体流程, 熟悉Git、Docker、Jenkins、K8s、Helm、Rancher 使用
+## <img src="../asserts/技能清单.png" width="30px"> 技能清单
+
+- 掌握 Golang (同时了解 Python)， 熟悉TDD、微服务、云开发。熟悉 Kratos，Gorm 框架 。 
+- 熟悉 Git 版本控制及协助管理，熟悉 Docker 容器镜像，K8s 容器化部署, 了解 CI/CD。 
+- 熟悉 MySQL、PG 表设计，优化（同时了解 Redis, MongoDB, TiDB），熟悉 S3 存储（云存储及本地存储）。
+- 熟悉 Unidoc（PDF and Office）、Excelize、Logrous 开源组件。
+- 具有 2b2c、OA、GUI应用、Shell脚本 实战经验 
+
+<!-- - 熟悉 项目开发、测试、部署、上线、维护整体流程, 熟悉Git、Docker、Jenkins、K8s、Helm、Rancher 使用
 - 掌握 Golang 及底层原理实现, 熟悉GC, GMP调度, Context, Channel等模块
 - 了解 Python, 有使用Python 解析MySQL BinLog日志、操作ElasticSearch数据、处理Excel经验
 - 熟悉 Golang 常见的微服务框架及开源组件, 如 Kratos、 Gin、Gorm、unidoc、Logrous、Excelize 等
@@ -20,15 +25,9 @@
 - 熟悉 云存储及本地存储, 熟悉S3 及 短信服务 接入使用
 - 熟悉 云开发, 容器化, 有镜像构建、docker部署、k8s部署 实战经验
 - 熟悉 序列图绘画、接口文档编写及相关组件使用, 如Draw、Swagger、Postman、ApiFox、XMind
-- 熟悉 Office Online、Elastic Search 安装部署, 熟悉 PhotoShop 使用
+- 熟悉 Office Online、Elastic Search 安装部署, 熟悉 PhotoShop 使用 -->
 
-## <img src="../assets/个人信息.png" width="30px"> 个人信息
 
-- 男/1994
-- 工作年限：5年+
-- 期望职位：Golang开发
-- 本科, 南京航空航天大学,2019.2~2021.7
-- 大专, 黄河水利技术学院,2014.9~2017.7
 
 ## <img src="../assets/工作经验.png" width="30px">  工作经验
 
@@ -132,6 +131,20 @@
     - 负责项目管理,全景管理,素材管理模块,优化了原有数据存储结构,提升数据查询速度。
     - 负责阿里云大屏对接及相应API的开发。
     - 涉及到技术：Golang,Gin,Casbin,Mongo,MySQL等
+
+---
+
+- 手机号：175-2132-8428
+- 邮箱：<feng6917@gmail.com>
+
+
+## <img src="../assets/个人信息.png" width="30px"> 个人信息
+
+- 男/1994
+- 工作年限：5年+
+- 期望职位：Golang开发
+- 本科, 南京航空航天大学,2019.2~2021.7
+- 大专, 黄河水利技术学院,2014.9~2017.7
 
 ### 自我评价
 
