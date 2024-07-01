@@ -6,9 +6,9 @@
 
 [大飞分享](#大飞分享来源-youtube)
 
-[分享日记](./6.28%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB.zip)
+[分享日记](./7.1%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB.zip)
 
-[小二886](./6.28%E4%BD%8E%E5%BB%B6%E8%BF%9F%E8%8A%82%E7%82%B9.zip)
+[小二886](./7.1%E4%BD%8E%E5%BB%B6%E8%BF%9F%E8%8A%82%E7%82%B9.zip)
 
 [米贝分享](https://www.mibei77.com/)
 
@@ -23,11 +23,11 @@
 ##### 大飞分享(来源 Youtube)
 
 ```
-    v2ray订阅链接 :  https://fs.v2rayse.com/share/20240627/uj4eohase9.txt
+    v2ray订阅链接 :  https://fs.v2rayse.com/share/20240630/76gogt6ie2.txt
 
-    clash订阅链接 :  https://fs.v2rayse.com/share/20240627/cowecbzt6b.yaml
+    clash订阅链接 :  https://fs.v2rayse.com/share/20240630/21gswsy7c9.yaml
 
-    sing-box订阅链接 ： https://fs.v2rayse.com/share/20240627/qwliw7af3b.json
+    sing-box订阅链接 ：https://fs.v2rayse.com/share/20240630/msldxbrgcw.json    
 ```
 
 [目录](#目录)
