@@ -2,19 +2,18 @@
  <h4 style="color: white;text-align: center;padding: 5px;">个人简历</h4>
 </div>
 
-
 - 手机号：175-2132-8428
 - 邮箱：<feng6917@gmail.com>
 
 #### 技能
 
-- 掌握 Golang (同时了解 Python)， 熟悉TDD、微服务、云原生。熟悉 Kratos，Gorm 框架 。 
-- 熟悉 Git 版本控制及协助管理，了解 CI/CD。熟悉 Docker 容器镜像，K8s 容器化部署。 
+- 掌握 Golang (同时了解 Python)， 熟悉TDD、微服务、云原生。熟悉 Kratos，Gorm 框架 。
+- 熟悉 Git 版本控制及协助管理，了解 CI/CD。熟悉 Docker 容器镜像，K8s 容器化部署。
 - 熟悉 MySQL、PG 表设计，优化（同时了解 Redis），熟悉 S3 存储（云存储及本地存储）。
 - 熟悉 Unidoc（PDF and Office）、Excelize、Logrous 开源组件。
-- 具有 2b2c、OA 项目、GUI应用、Shell脚本 实战经验。
+- 具有 2b2c、SaaS, OA 项目、GUI应用、Shell脚本 实战经验。
 
-####  项目经验
+#### 项目经验
 
 - * 蜂鸟项目
     该项目主要是对第三方设备平台或者离线上传的视频流进行人脸&形体算法解析，识别出特征信息，进行实时或者历史检索。
@@ -33,18 +32,18 @@
     - 基于RBAC模型 设计符合服务的权限、角色、用户 方案。
     - 优化精简图像识别系统50%代码量，提升服务识别处理速度。
     - 开发Excel导出插件,可自定义操作,提高业务代码开发效率。
-    
 
 - * OA项目
     - 该项目用于企业员工的日常办公管理。
 
     - 基于Casbin 网盘模块权限、菜单权限的设计开发。
-    - Office Online 部署, MySQL 基于binlog数据同步、 Elastic Search ik 分词 数据检索。
-    - oss 文件存储，短信发送。
+    - Office Online 部署, MySQL 基于Binlog数据同步、 Elastic Search ik 分词 数据检索。
+    - OSS 文件存储，短信发送。
 
 #### 工作经历
+
 - 智慧视通（杭州）科技有限公司(2023.3～至今) 后端开发
-  - 
+  - 企业内部自研项目及产品开发
 
 - 亮风台（上海）信息科技有限公司(2021.11～2023.1) Golang开发工程师
   - 企业应用内部平台及合作项目开发  
@@ -52,9 +51,6 @@
 - 上海司睿杰建筑科技有限公司(2018.8～2021.11) Python/Golang开发
   - 自研项目及集团内部项目开发
   
-
-
-
 ## <img src="../assets/个人信息.png" width="30px"> 个人信息
 
 - 男/1994
