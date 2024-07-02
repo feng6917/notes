@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
+	"sync"
 	"time"
 	"unicode/utf8"
 	"unsafe"
@@ -69,7 +70,38 @@ func main() {
 	// res := testReturn()
 	// logrus.Info("Res: ", res)
 
-	testPanic()
+	// testPanic()
+	// 测试读锁一直获取 写锁是否会饿死 写锁先获取到锁后，后进来的读锁需要进行等待。
+	testRWHunger()
+}
+
+func testRWHunger() {
+	rw := sync.RWMutex{}
+	go func() {
+		rw.RLock()
+		time.Sleep(time.Second * 3)
+		fmt.Println("print r")
+		rw.RUnlock()
+	}()
+	time.Sleep(time.Second * 1)
+	go func() {
+		rw.Lock()
+		fmt.Println("print w")
+		rw.Unlock()
+	}()
+	go func() {
+		rw.RLock()
+		fmt.Println("print r1")
+		rw.RUnlock()
+	}()
+	time.Sleep(time.Second * 2)
+	go func() {
+		rw.RLock()
+		time.Sleep(time.Second * 3)
+		fmt.Println("print r")
+		rw.RUnlock()
+	}()
+
 }
 
 func testPanic() {
