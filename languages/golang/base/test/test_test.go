@@ -7,6 +7,10 @@ import (
 	"testing"
 )
 
+// https://juejin.cn/post/7133520098123317256
+// 单测可以使用面向对象的方式避免不稳定的因素出现 （gomock 相当于代码mock了一遍 把 不稳定因素剔除）
+// gomonkey https://github.com/agiledragon/gomonkey 打桩
+
 func TestMain(m *testing.M) {
 	fmt.Println("全局测试前执行操作,初始化服务、数据库及创建数据等")
 	// 如果 TestMain 使用了 flags，这里应该加上flag.Parse()
