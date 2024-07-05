@@ -96,8 +96,12 @@
     <https://blog.csdn.net/raoxiaoya/article/details/118437969>  
     <https://learnku.com/articles/45279>
   - 59. Golang 触发异常的场景有哪些?
-  - 60.
-
+  - 60. net/http包中client如何实现长连接？
+    <https://segmentfault.com/a/1190000042631284>
+  - 61. rpc 了解
+    <https://www.cnblogs.com/sumuncle/p/11554904.html>
+  - 62. pb buffer 原理
+    <https://blog.csdn.net/dyj5841619/article/details/94717419>
   ---
   - 200. mysql 与 redis 如何保证双写一致性
   

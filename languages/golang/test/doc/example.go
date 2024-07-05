@@ -73,6 +73,20 @@ func main() {
 	// testPanic()
 	// 测试读锁一直获取 写锁是否会饿死 写锁先获取到锁后，后进来的读锁需要进行等待。
 	testRWHunger()
+	// once := sync.Once{} // 单次执行 实现原理 done&do 仅一次执行有效 使用done实现，当done为true时，do不会被执行，do 执行时 会进行判断，传参f是一个没有返回值的方法
+
+	m := make(map[interface{}]int)
+	m[[1]int{123}] = 123
+	// slice map func value 不可以比较 不能作key 排序 orderedMap
+	fmt.Println(m)
+	// map 保证安全 一般情况下 加锁 （读写锁） 锁的存在会降低性能 一般要求降低锁的粒度及持有时间 采用分片锁 参考 concurrent-map 通过 GetShard key 计算获取分片索引 进行后续操作
+
+	// sync.map 特性
+	// 1. 空间换时间 2. 优先从read字段读取、更新、删除 3. 动态调整 4. double-checking 二次检查 加锁之后还是再检查read字段，确定不存在才操作dirty字段 5. 延迟删除
+	// 后续还需要看源码
+
+
+
 }
 
 func testRWHunger() {
