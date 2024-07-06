@@ -20,7 +20,7 @@ require (
 	github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646
 	github.com/robotn/gohook v0.41.0
 	github.com/secsy/goftp v0.0.0-20200609142545-aa2de14babf4
-	github.com/sirupsen/logrus v1.8.1
+	github.com/sirupsen/logrus v1.9.3
 	github.com/stretchr/testify v1.8.4
 	github.com/trimmer-io/go-xmp v1.0.0
 	github.com/twgh/xcgui v1.3.382

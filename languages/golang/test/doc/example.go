@@ -85,7 +85,9 @@ func main() {
 	// 1. 空间换时间 2. 优先从read字段读取、更新、删除 3. 动态调整 4. double-checking 二次检查 加锁之后还是再检查read字段，确定不存在才操作dirty字段 5. 延迟删除
 	// 后续还需要看源码
 
+	// sync.pool local localSize 本地队列 victim victimSize  gc 时拷贝，防止性能抖动，平滑过渡 三个方法 New, Put, Get
 
+	// context emptyCtx 空结构体 Done 完成 Err 错误信息 Value  值 Deadline 截止时间  实现方法 WithValue WithCancel WithDeadline WithTimeout WithCancel, ContextBackend ContextTODO
 
 }
 
