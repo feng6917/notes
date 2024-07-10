@@ -1,4 +1,4 @@
-- Golang
+- 编程
   - Go 语言(Golang)编码规范 <a href ="https://www.bookstack.cn/read/go-code-convention/zh-CN-README.md"><img src="../asserts/html.png"  height="30" width="30" align="bottom">
   - [编写地道的 Go 代码](https://colobu.com/2017/02/07/write-idiomatic-golang-codes/)
   - [Go Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments#comment-sentences)
@@ -9,13 +9,8 @@
   - [GOLANG 修养之路 刘丹冰 Aceld](https://github.com/aceld/golang)
   - Golang中GC回收机制三色标记与混合写屏障 <a href ="https://www.bilibili.com/video/BV1wz4y1y7Kd"><img src="../asserts/video_play.png"  height="30" width="30" align="bottom">
   - Golang深入理解GPM模型 <a href ="https://www.bilibili.com/video/BV19r4y1w7Nx"><img src="../asserts/video_play.png"  height="30" width="30" align="bottom">
-  
-- Python
-
   - [轻量级 Django](https://drive.google.com/file/d/1bnPvkckYtK9op3lx9irCNqwKxuO8ozH5/view?usp=share_link)
   - [大话设计模式](https://drive.google.com/file/d/1vP3b8rDGsK1l2Hyd6u8cB38-ep06R6Pi/view?usp=share_link)
-
-- 数据库
   - [MySQL 必知必会](https://drive.google.com/file/d/1BSZKOE8bBz1CNdoThuq8n047Fxl8hmgV/view?usp=share_link)
     - [笔记](./MySQL%20%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A.md)
   - [PostgreSQL 数据库内核分析](https://drive.google.com/file/d/1cerWe56v6I_NZkAehNeDcBEM_A2_2WC8/view?usp=share_link)
@@ -26,8 +21,6 @@
   - [Redis 设计与实现](https://drive.google.com/file/d/1ZUSueUEZ6YxfY391320B0HmXsq6vzqG1/view?usp=share_link)
   - [nginx 中文文档](https://www.nginx.cn/doc/)
   - [nginx 开发从入门到精通-淘宝核心组编写](http://tengine.taobao.org/book/)
-
-- 程序
   - [算法图解](https://drive.google.com/file/d/1z5nYj2hqyJFB3fDlaPHHh8bWKiGhTFmI/view?usp=drive_link)
     - [笔记](./%E7%AE%97%E6%B3%95%E5%9B%BE%E8%A7%A3%E7%AC%94%E8%AE%B0.md)
   - [程序员的职业素养](https://drive.google.com/file/d/1L4TTFnzsYidNuWaFAuVULnDwehHJxY4t/view?usp=share_link)
@@ -38,6 +31,8 @@
   - [高效程序员的 45 个习惯](https://drive.google.com/file/d/1hSIeggu8AaOtya_vtMrm8Y_gpQB36c9O/view?usp=share_link)
   - [重构-改善既有代码的设计](https://drive.google.com/file/d/1Np3lTT0yeX0k47UQmFsjILs_6IZMxeWF/view?usp=share_link)
   - [人月神话](https://drive.google.com/file/d/1XwVRcPbRu1DmeLmBhIkHBbJgk8Bwk--q/view?usp=share_link)
+  - [操作系统导论]
+  - [计算机组成原理]
 
 - 系统
   - Linux 7.6 <a href ="https://www.bilibili.com/video/BV16Q4y1y7xS"><img src="../asserts/video_play.png"  height="30" width="30" align="bottom">
