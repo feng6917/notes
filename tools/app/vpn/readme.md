@@ -23,11 +23,7 @@
 ##### 大飞分享(来源 Youtube)
 
 ```
-    v2ray订阅链接 :  https://fs.v2rayse.com/share/20240630/76gogt6ie2.txt
-
-    clash订阅链接 :  https://fs.v2rayse.com/share/20240630/21gswsy7c9.yaml
-
-    sing-box订阅链接 ：https://fs.v2rayse.com/share/20240630/msldxbrgcw.json 
+    失联中
 ```
 
 [目录](#目录)

@@ -4,7 +4,6 @@ go 1.20
 
 require (
 	fyne.io/fyne/v2 v2.4.4
-	github.com/360EntSecGroup-Skylar/excelize v1.4.1
 	github.com/BurntSushi/toml v1.3.2
 	github.com/PuerkitoBio/goquery v1.5.1
 	github.com/adrg/sysfont v0.1.2
@@ -16,6 +15,7 @@ require (
 	github.com/go-sql-driver/mysql v1.5.0
 	github.com/gorilla/i18n v0.0.0-20150820051429-8b358169da46
 	github.com/gorilla/mux v1.8.0
+	github.com/hu17889/go_spider v0.0.0-20150809033053-85ede20bf88b
 	github.com/jinzhu/gorm v1.9.16
 	github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646
 	github.com/robotn/gohook v0.41.0
@@ -43,6 +43,7 @@ require (
 	github.com/adrg/strutil v0.2.2 // indirect
 	github.com/adrg/xdg v0.3.0 // indirect
 	github.com/andybalholm/cascadia v1.1.0 // indirect
+	github.com/bitly/go-simplejson v0.5.1 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/fredbi/uri v1.0.0 // indirect
 	github.com/fsnotify/fsnotify v1.6.0 // indirect
