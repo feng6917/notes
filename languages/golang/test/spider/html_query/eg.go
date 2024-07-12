@@ -59,7 +59,7 @@ func demo1() {
 }
 
 func demo2() {
-	reqUrl := "https://github.com/feng6917/notes"
+	reqUrl := "https://blog.csdn.net/ppdouble/article/details/134516917"
 	request, err := http.NewRequest("GET", reqUrl, nil)
 	if err != nil {
 		logrus.Errorf("err %v", err)
@@ -103,7 +103,7 @@ func demo2() {
 	// fmt.Println(doc.Text())
 
 	// Find the review items
-	s := doc.Find("span.Truncate-text").Length()
+	s := doc.Find("#content_views > pre:nth-child(6) > code > span:nth-child(26)").Text()
 	fmt.Println("s: ", s)
 }
 
