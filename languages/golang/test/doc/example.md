@@ -102,6 +102,10 @@
     <https://www.cnblogs.com/sumuncle/p/11554904.html>
   - 62. pb buffer 原理
     <https://blog.csdn.net/dyj5841619/article/details/94717419>
+
+  ---
+  - 100. 进程为什么比线程要快？
+  - 101. 进程间通信方式有哪些？
   ---
   - 200. mysql 与 redis 如何保证双写一致性
   
