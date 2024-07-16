@@ -103,6 +103,9 @@
   - 62. pb buffer 原理
     <https://blog.csdn.net/dyj5841619/article/details/94717419>
 
+  - 63. socket 是什么？
+      <https://golangguide.top/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E7%82%B9/socket%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F.html>
+
   ---
   - 100. 进程为什么比线程要快？
   - 101. 进程间通信方式有哪些？
