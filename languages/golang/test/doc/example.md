@@ -131,6 +131,10 @@
   - 81. TCP长连接和短连接有那么不同的使用场景？
       <<https://www.jianshu.com/p/1cbc522c983d> 了解一下>
   - 82. TIME_WAIT时长，为什么？
+  - 83. 什么是零拷贝？
+    <https://segmentfault.com/a/1190000044068914>
+  - 84. HTTP 简述 HTTP 的 keepalive 的原理和使用场景
+    <https://juejin.cn/post/7116843553505935367>
 
   ---
   - 100. 进程为什么比线程要快？
