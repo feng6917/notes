@@ -106,6 +106,32 @@
   - 63. socket 是什么？
       <https://golangguide.top/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E7%82%B9/socket%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F.html>
 
+  - 64. tcp 粘包 数据包问题？
+  - 65. 既然IP层会分片，为什么TCP层也要分段？
+  - 66. 断网了，还能ping通 127.0.0.1 吗？ 为什么？
+  - 67. 连接一个IP不存在的主机时，握手过程是怎样的？
+  - 68. 代码执行send成功后，数据就发出去了吗？
+  - 69. 收到RST， 就一定会断开TCP连接么？
+  - 70. 没有accept, 能建立TCP链接么？
+  - 71. HTTP 是无状态的吗？需要保持状态的场景应该怎么做？
+  - 72. RestFul 是什么？RestFul 请求的 URL 有什么特点？
+  - 73. 一次url访问会经历哪些过程
+  - 74. TCP 三次握手以及四次挥手的流程。
+    <<https://segmentfault.com/a/1190000022082901> 凑合看>
+  - 75. TCP的拥塞控制具体是怎么实现的？UDP有拥塞控制吗？
+      <https://juejin.cn/post/6981357492466892836>
+  - 76. 是否了解中间人劫持原理
+      <https://segmentfault.com/a/1190000041047662>
+  - 77. TCP 与 UDP 在网络协议中的哪一层，他们之间有什么区别？
+  - 78. HTTP 与 HTTPS 有哪些区别？
+  - 79. select, poll 和epoll区别
+      <https://zhuanlan.zhihu.com/p/629960221>
+  - 80. TCP 如何实现数据有序性？
+      <<https://www.coonote.com/tcpip-note/tcp-ensures-order-transmission.html> 了解一下 就是排序的具体步骤>
+  - 81. TCP长连接和短连接有那么不同的使用场景？
+      <<https://www.jianshu.com/p/1cbc522c983d> 了解一下>
+  - 82. TIME_WAIT时长，为什么？
+
   ---
   - 100. 进程为什么比线程要快？
   - 101. 进程间通信方式有哪些？

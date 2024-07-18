@@ -33,6 +33,9 @@
   - [人月神话](https://drive.google.com/file/d/1XwVRcPbRu1DmeLmBhIkHBbJgk8Bwk--q/view?usp=share_link)
   - [操作系统导论]
   - [计算机组成原理]
+  - [算法导论]
+  - [TCP/IP详解]
+  - [UNIX网络编程]
 
 - 系统
   - Linux 7.6 <a href ="https://www.bilibili.com/video/BV16Q4y1y7xS"><img src="../asserts/video_play.png"  height="30" width="30" align="bottom">
