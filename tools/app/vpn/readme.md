@@ -8,7 +8,7 @@
 
 [分享日记](./7.1%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB.zip)
 
-[小二886](./7.1%E4%BD%8E%E5%BB%B6%E8%BF%9F%E8%8A%82%E7%82%B9.zip)
+<!-- [小二886](./7.1%E4%BD%8E%E5%BB%B6%E8%BF%9F%E8%8A%82%E7%82%B9.zip) -->
 
 [米贝分享](https://www.mibei77.com/)
 
@@ -23,7 +23,13 @@
 ##### 大飞分享(来源 Youtube)
 
 ```
-    失联中
+    v2ray订阅链接 :  https://fs.v2rayse.com/share/20240721/sdzog8zjn6.txt
+
+
+    clash订阅链接 :  https://fs.v2rayse.com/share/20240721/ut7smownt5.yaml
+
+
+    sing-box订阅链接 ：https://fs.v2rayse.com/share/20240721/5dnd2f80la.json
 ```
 
 [目录](#目录)
