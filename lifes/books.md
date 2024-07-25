@@ -36,7 +36,10 @@
   - [算法导论]
   - [TCP/IP详解]
   - [UNIX网络编程]
-
+  - [MySQL 是怎样运行的]
+  - [高性能 MySQL]
+  - [MySQL 技术内幕 InnoDB 存储引擎]
+  
 - 系统
   - Linux 7.6 <a href ="https://www.bilibili.com/video/BV16Q4y1y7xS"><img src="../asserts/video_play.png"  height="30" width="30" align="bottom">
   - Kubernetes (K8S) 3 小时快速上手 + 实践 <a href ="https://www.bilibili.com/video/BV1Tg411P7EB"><img src="../asserts/video_play.png"  height="30" width="30" align="bottom">
