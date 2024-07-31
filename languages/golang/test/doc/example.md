@@ -11,7 +11,7 @@
   熔断器 限流器
   线上问题排查
   tidb
-  
+  linux 性能内存排查
 ```
 
 - golang 开发新手常犯的五十个错误
@@ -153,7 +153,12 @@
   - 89. DNS 查询服务器的基本流程是什么？DNS 劫持是什么？
   －90. 简述对称与非对称加密的概念
   - 91. epoll中的ET和LT模式 ???
-  - 92.
+  - 92. JWT 的原理和校验机制
+  - 93. 介绍下proactor和reactor ???
+    <https://cloud.tencent.com/developer/article/1769945>
+  - 94. RPC 的调用过程 ???
+    <https://cloud.tencent.com/developer/article/1727582>
+  - 95.
 
   ---
   - 100. 进程为什么比线程要快？
