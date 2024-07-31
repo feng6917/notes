@@ -149,6 +149,11 @@
     <https://segmentfault.com/a/1190000044068914>
   - 84. HTTP 简述 HTTP 的 keepalive 的原理和使用场景
     <https://juejin.cn/post/7116843553505935367>
+  - 85. Cookie 和 Session 的关系和区别是什么？
+  - 89. DNS 查询服务器的基本流程是什么？DNS 劫持是什么？
+  －90. 简述对称与非对称加密的概念
+  - 91. epoll中的ET和LT模式 ???
+  - 92.
 
   ---
   - 100. 进程为什么比线程要快？
