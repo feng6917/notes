@@ -178,7 +178,20 @@
   - 105. 有chunked的时候contentlength是什么样子
     <https://cloud.tencent.com/developer/article/1804395>
   - 106. 如何设计一个可靠的udp
-    
+
+  - 暂停  
+
+
+----
+#### 数据库
+
+- 400. 数据库三大范式是什么
+- 401. mysql有关权限的表都有哪几个
+- 402. MySQL的binlog有有几种录入格式？分别有什么区别？
+- 403. mysql有哪些数据类型
+      https://www.cnblogs.com/secsafe/p/12255370.html
+- 404.      
+
   
   ---
   - 100. 进程为什么比线程要快？
