@@ -211,6 +211,9 @@
 - 416. 非聚簇索引一定会回表查询吗？
 - 417. 什么是数据库事务？
   <https://cloud.tencent.com/developer/article/1816543>
+- 418. 对MySQL的锁了解吗，锁的是什么？
+  https://cloud.tencent.com/developer/article/2185599  
+- 419. 按照锁的粒度分数据库锁有哪些？锁机制与InnoDB锁算法  
 
   ---
   - 100. 进程为什么比线程要快？
