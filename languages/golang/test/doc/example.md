@@ -181,33 +181,37 @@
 
   - 暂停  
 
-
 ----
+
 #### 数据库
 
 - 400. 数据库三大范式是什么
 - 401. mysql有关权限的表都有哪几个
 - 402. MySQL的binlog有有几种录入格式？分别有什么区别？
 - 403. mysql有哪些数据类型
-      https://www.cnblogs.com/secsafe/p/12255370.html
+      <https://www.cnblogs.com/secsafe/p/12255370.html>
 - 404. MySQL存储引擎MyISAM与InnoDB区别
 - 405. MyISAM索引与InnoDB索引的区别？
-  https://www.cnblogs.com/balfish/p/8288891.html
+  <https://www.cnblogs.com/balfish/p/8288891.html>
 - 406. InnoDB引擎的4大特性
-- 407.  什么是索引？优缺点，聚簇索引与非聚簇索引 
-  https://developer.aliyun.com/article/841106
+- 407. 什么是索引？优缺点，聚簇索引与非聚簇索引
+  <https://developer.aliyun.com/article/841106>
 - 408. 索引使用场景
-  https://www.cnblogs.com/ghjbk/p/8384262.html
+  <https://www.cnblogs.com/ghjbk/p/8384262.html>
 - 409. 索引算法有哪些？
 - 410. 百万级别或以上的数据如何删除
 - 411. 前缀索引
-    https://www.cnblogs.com/itjiangpo/p/14181386.html
-- 412. 什么是最左前缀原则？    
-    https://blog.csdn.net/zhizhengguan/article/details/120855011
+    <https://www.cnblogs.com/itjiangpo/p/14181386.html>
+- 412. 什么是最左前缀原则？
+    <https://blog.csdn.net/zhizhengguan/article/details/120855011>
 - 413. B树和B+树的区别
-    https://www.cnblogs.com/1832921tongjieducn/p/13358264.html    
+    <https://www.cnblogs.com/1832921tongjieducn/p/13358264.html>  
+- 414. 使用B树的好处, 使用B+树的好处
+- 415. Hash索引和B+树所有有什么区别或者说优劣呢?
+- 416. 非聚簇索引一定会回表查询吗？
+- 417. 什么是数据库事务？
+  <https://cloud.tencent.com/developer/article/1816543>
 
-  
   ---
   - 100. 进程为什么比线程要快？
   - 101. 进程间通信方式有哪些？
