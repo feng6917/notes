@@ -9,7 +9,7 @@
 #### 技能
 
 - 掌握 Golang (同时了解 Python) 及底层原理， 熟悉TDD、微服务、DevOps、云原生、分布式、DDD。
-- 熟悉 Docker 容器镜像，K8s 容器化部署。熟悉 Kratos，Gorm 框架 。
+- 熟悉 Docker 容器镜像，CI自动化构建、安装包打包， K8s 容器化部署。熟悉 Kratos，Gorm 框架 。
 - 熟悉 MySQL、PG 表设计，优化（同时了解 Redis），熟悉 S3 存储（云存储及本地存储）。
 - 熟悉 Gorm、Unidoc（PDF and Office）、Excelize、Logrous、Fyne、Xcgui 开源组件。
 - 具有 管理系统（SaaS、OA、B2C）、移动端（小程序、APP）、第三方（DataV、Office）、GUI 实战经验。
