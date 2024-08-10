@@ -214,6 +214,42 @@
 - 418. 对MySQL的锁了解吗，锁的是什么？
   https://cloud.tencent.com/developer/article/2185599  
 - 419. 按照锁的粒度分数据库锁有哪些？锁机制与InnoDB锁算法  
+- 420. MySQL中InnoDB引擎的行锁是怎么实现的？
+- 421. 数据库的乐观锁和悲观锁是什么？怎么实现的？
+  https://cloud.tencent.com/developer/article/1920876
+- 422.   为什么要使用视图？什么是视图？
+- 423. 视图的优点, 缺点
+- 424. 什么是游标？
+    https://www.cnblogs.com/luoshengjie/p/10153933.html
+- 425. 存储过程与函数，存储过程有哪些优缺点？   
+- 426. 什么是触发器？触发器的使用场景有哪些？MySQL中都有哪些触发器？
+- 427. SQL语句主要分为哪几类
+      https://www.cnblogs.com/pingdingshan/p/15934188.html
+- 428. 超键、候选键、主键、外键分别是什么？
+    https://www.cnblogs.com/zhoading/p/10928769.html  
+- 429. SQL 约束有哪几种？
+    https://www.cnblogs.com/willingtolove/p/9215330.html    
+- 430. 六种关联查询        
+- 431. 什么是子查询
+    http://t.csdnimg.cn/78Ip5
+- 432. mysql中 in 和 exists 区别
+- 433. mysql中int(10)和char(10)以及varchar(10)的区别   
+- 434. FLOAT和DOUBLE的区别是什么？
+- 435. UNION与UNION ALL的区别？
+- 436. 如何定位及优化SQL语句的性能问题？
+    https://cloud.tencent.com/developer/article/1665882
+- 437. SQL的生命周期？
+    https://developer.aliyun.com/article/1391548    
+- 438. 大表数据查询，怎么优化
+    https://blog.csdn.net/Y_hanxiong/article/details/136694475
+- 439. 超大分页怎么处理？
+    https://blog.csdn.net/m0_56615376/article/details/137048998
+    https://blog.csdn.net/QQ727338622/article/details/127224611
+- 440. 慢查询日志怎么看
+    https://www.cnblogs.com/greatsql/p/17011719.html    
+
+
+
 
   ---
   - 100. 进程为什么比线程要快？

@@ -89,7 +89,19 @@ func main() {
 	// sync.pool local localSize 本地队列 victim victimSize  gc 时拷贝，防止性能抖动，平滑过渡 三个方法 New, Put, Get
 
 	// context emptyCtx 空结构体 Done 完成 Err 错误信息 Value  值 Deadline 截止时间  实现方法 WithValue WithCancel WithDeadline WithTimeout WithCancel, ContextBackend ContextTODO
-	printHeap()
+	// printHeap()
+	printNum(2)(4)
+}
+
+func printNum(i int) func(i int) {
+	fmt.Println(i)
+	return func(ni int) {
+		fmt.Println(i + 1)
+		fmt.Println(ni + 1)
+		if ni+1 > 4 {
+			printNum(ni)(1)
+		}
+	}
 }
 
 func printHeap() {
