@@ -246,7 +246,19 @@
     https://blog.csdn.net/m0_56615376/article/details/137048998
     https://blog.csdn.net/QQ727338622/article/details/127224611
 - 440. 慢查询日志怎么看
-    https://www.cnblogs.com/greatsql/p/17011719.html    
+    https://www.cnblogs.com/greatsql/p/17011719.html   
+- 441. MySQL数据库cpu飙升到500%的话他怎么处理？  
+- 442. 分库分表了是怎么做的？分表分库了有什么问题？有用到中间件么？
+  https://www.cnblogs.com/heqiyoujing/p/10924574.html   
+- 443. MySQL的复制原理以及流程
+  https://www.cnblogs.com/miracle77hp/p/10208405.html  
+- 444. 读写分离有哪些解决方案？
+  https://cloud.tencent.com/developer/article/1664449  
+ - 445. 备份计划，mysqldump以及xtranbackup的实现原理
+  https://www.cnblogs.com/zhoujinyi/p/5789465.html 
+-  446. 数据表损坏的修复方式有哪些？
+  https://www.cnblogs.com/ygcphp/p/10282747.html
+
 
 
 
