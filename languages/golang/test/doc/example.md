@@ -3,6 +3,8 @@
 *缺什么*
 
 ```
+  etcd
+  redis
   架构理解
   分布式服务及分布式锁
   红黑树
@@ -12,6 +14,12 @@
   线上问题排查
   tidb
   linux 性能内存排查
+```
+
+```
+  gin
+  go-micro
+  broker 熔断器
 ```
 
 - golang 开发新手常犯的五十个错误
@@ -186,18 +194,16 @@
   - 109. 什么是跨域，什么情况下会发生跨域请求？
       <https://cloud.tencent.com/developer/article/1678220>
 
-
-
   - 111. traceroute 有什么作用？
-      https://www.cnblogs.com/emilyyoucan/articles/7478532.html
+      <https://www.cnblogs.com/emilyyoucan/articles/7478532.html>
   - 112. TIME_WAIT危害
-      https://www.cnblogs.com/dabai56/p/11201106.html
+      <https://www.cnblogs.com/dabai56/p/11201106.html>
   - 114. select什么情况返回0
   - 115. TCP 的 keepalive 了解吗？说一说它和 HTTP 的 keepalive 的区别？
-      https://www.cnblogs.com/shitianming/p/16823530.html   
+      <https://www.cnblogs.com/shitianming/p/16823530.html>
   - 116. 简述常见的 HTTP 状态码的含义
-      https://www.runoob.com/http/http-status-codes.html  
-  - 200.        
+      <https://www.runoob.com/http/http-status-codes.html>  
+  - 200.
 
   - 暂停  
 
@@ -299,4 +305,3 @@
 - 301. mutex
 
 - 302. chan 发送及接收数据
-
