@@ -6,13 +6,12 @@
 
 ##### V2ray
 
-[大飞分享]()
-
-[分享日记]()
-
 ##### Clash
 
-[玉豆分享](#玉豆来源-youtube)
+```
+    https://www.xrayvip.com/free.yaml
+    https://v2ray.neocities.org/clash.xml
+```
 
 [资源分享师](#资源分享师来源-youtube)
 65358691
